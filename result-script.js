@@ -3,15 +3,15 @@ const teamBuildingT1 = localStorage.getItem("teamBuildingT1");
 const skitTeam1 = localStorage.getItem("skitTeam1");
 const shakeItTeam1 = localStorage.getItem("shakeItTeam1");
 const quizTeam1 = localStorage.getItem("quizTeam1");
-
+const overAllTeam1 = localStorage.getItem('resultTeam1');
 // Display the result and the calculations in the result page
-document.getElementById("teambuildingT1").innerText = teamBuildingT1;
-document.getElementById("skitTeam1").innerText = skitTeam1;
-document.getElementById("stretchTeam1").innerText = shakeItTeam1;
-document.getElementById("quizTeam1").innerText = quizTeam1;
+document.getElementById("teambuildingT1L").innerText = teamBuildingT1;
+document.getElementById("skitTeam1L").innerText = skitTeam1;
+document.getElementById("stretchTeam1L").innerText = shakeItTeam1;
+document.getElementById("quizTeam1L").innerText = quizTeam1;
+document.getElementById("overAllTeam1Score").innerText = overAllTeam1;
 
 ////////////////////////////// Team 2 //////////////////////////
-
 const teamBuildingT2 = localStorage.getItem("teamBuildingT2");
 const skitTeam2 = localStorage.getItem("skitTeam2");
 const shakeItTeam2 = localStorage.getItem("shakeItTeam2");

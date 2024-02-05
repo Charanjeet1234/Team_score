@@ -15,13 +15,13 @@ function selectTeam(teamNumber) {
 
 function submitFormTeam1() {
   const teamBuildingT1 = document.getElementById("teamBuildingT1").value;
-  localStorage.setItem("teamBuildingT1", teamBuildingT1);
+  localStorage.setItem("teamBuildingT1", teamBuildingT1) || 0;
   updateResultPage();
 }
 
 function submitFormTeamSkit() {
   const skitTeam1 = document.getElementById("skitTeam1").value;
-  localStorage.setItem("skitTeam1", skitTeam1);
+  localStorage.setItem("skitTeam1", skitTeam1) || 0;
   updateResultPage();
 }
 
@@ -29,16 +29,29 @@ function submitFormTeamShakeIt() {
   const shakeItTeam1 = parseFloat(
     document.getElementById("shakeItTeam1").value
   );
-  localStorage.setItem("shakeItTeam1", shakeItTeam1);
+  localStorage.setItem("shakeItTeam1", shakeItTeam1) || 0;
   updateResultPage();
 }
 
 function submitFormTeamQuizIt() {
   const quizTeam1 = parseFloat(document.getElementById("quizTeam1").value);
-  localStorage.setItem("quizTeam1", quizTeam1);
+  localStorage.setItem("quizTeam1", quizTeam1) || 0;
+  // localStorage.setItem("result",result)
   updateResultPage();
 }
 
+function submitFormOverallTeam1()
+{
+  const team1teambuildingscore = parseFloat(localStorage.getItem("teamBuildingT1")) || 0;
+  const team1skitscore = parseFloat(localStorage.getItem("skitTeam1")) || 0;
+  const team1shakeitscore = parseFloat(localStorage.getItem("shakeItTeam1")) || 0;
+  const team1quizscore = parseFloat(localStorage.getItem("quizTeam1")) || 0;
+
+  const resultTeam1 = team1teambuildingscore + team1skitscore + team1shakeitscore + team1quizscore;
+  document.getElementById('resultTeam1').value = resultTeam1
+  localStorage.setItem("resultTeam1", resultTeam1);
+  
+}
 // ////////////////////////////////////// Function for team 2 ////////////////////////////////////////
 
 function submitFormTeam2() {
