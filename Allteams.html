@@ -17,78 +17,709 @@
   </head>
   <body>
     <div class="team-center">
-       
-      <button type="button" class="btn btn-primary" onclick="selectTeam(1)">Team 1</button>
-      <button type="button" class="btn btn-primary" onclick="selectTeam(2)">Team 2</button>
-      <button type="button" class="btn btn-primary" onclick="selectTeam(3)">Team 3</button>
-      <button type="button" class="btn btn-primary" onclick="selectTeam(4)">Team 4</button>
-      <button type="button" class="btn btn-primary" onclick="selectTeam(5)">Team 5</button>
-      <button type="button" class="btn btn-primary" onclick="selectTeam(6)">Team 6</button>
-      <button type="button" class="btn btn-primary" onclick="selectTeam(7)">Team 7</button>
-      <button type="button" class="btn btn-primary" onclick="selectTeam(8)">Team 8</button>
-      <button type="button" class="btn btn-primary" onclick="selectTeam(9)">Team 9</button>
-      <button type="button" class="btn btn-primary" onclick="selectTeam(10)">Team 10</button>
-      <button type="button" class="btn btn-primary" onclick="selectTeam(11)">Team 11</button>
-      <button type="button" class="btn btn-primary" onclick="selectTeam(12)">Team 12</button>
-      
+      <button type="button" class="btn btn-primary" onclick="selectTeam(1)">
+        Team 1
+      </button>
+      <button type="button" class="btn btn-primary" onclick="selectTeam(2)">
+        Team 2
+      </button>
+      <button type="button" class="btn btn-primary" onclick="selectTeam(3)">
+        Team 3
+      </button>
+      <button type="button" class="btn btn-primary" onclick="selectTeam(4)">
+        Team 4
+      </button>
+      <button type="button" class="btn btn-primary" onclick="selectTeam(5)">
+        Team 5
+      </button>
+      <button type="button" class="btn btn-primary" onclick="selectTeam(6)">
+        Team 6
+      </button>
+      <button type="button" class="btn btn-primary" onclick="selectTeam(7)">
+        Team 7
+      </button>
+      <button type="button" class="btn btn-primary" onclick="selectTeam(8)">
+        Team 8
+      </button>
+      <button type="button" class="btn btn-primary" onclick="selectTeam(9)">
+        Team 9
+      </button>
+      <button type="button" class="btn btn-primary" onclick="selectTeam(10)">
+        Team 10
+      </button>
+      <button type="button" class="btn btn-primary" onclick="selectTeam(11)">
+        Team 11
+      </button>
+      <button type="button" class="btn btn-primary" onclick="selectTeam(12)">
+        Team 12
+      </button>
     </div>
 
- 
-   <div id="team1Forms" class="containerTeam">
-    <h1 class="team-center">Add Points - Team 1</h1>
-    <div class="conainer">
-    <div class = "team-form">
-    <form id="team1TeamBuildingForm">
-      <label for="teamBuildingT1">Team Building:</label>
-      <input type="number" id="teamBuildingT1" name="teamBuildingT1" required />
-      <button type="button" onclick="submitFormTeam1()">Submit</button>
-    </form>
-  
-<!--  --------------------------------------- Team Skit --------------------------------------- -->
+    <!-- ------------------------------------- Team 1 Forms --------------------------------------- -->
 
-<form id="team1TeamBuildingForm" class="Form">
-    <label for="teamBuildingT1">Skit:</label>
-      <input type="number" id="skitTeam1" name="skitTeam1" required />
-    <button type="button" onclick="submitFormTeamSkit()">Submit</button>
-  </form>
+    <div id="team1Forms" class="containerTeam">
+      <h1 class="team-center">Add Points - Team 1</h1>
+      <div class="conainer">
+        <div class="team-form">
+          <form id="team1TeamBuildingForm">
+            <label for="teamBuildingT1">Team Building:</label>
+            <input
+              type="number"
+              id="teamBuildingT1"
+              name="teamBuildingT1"
+              required
+            />
+            <button type="button" onclick="submitFormTeam1()">Submit</button>
+          </form>
 
-  <!--  --------------------------------------- Shake It --------------------------------------- -->
+          <!--  --------------------------------------- Team Skit --------------------------------------- -->
 
-<form id="team1TeamBuildingForm" class="Form">
-    <label for="teamBuildingT1">Shake It:</label>
-    <input type="number" id="shakeItTeam1" name="shakeItTeam1" required />
-    <button type="button" onclick="submitFormTeamShakeIt()">Submit</button>
-  </form>
+          <form id="team1TeamBuildingForm" class="Form">
+            <label for="teamBuildingT1">Skit:</label>
+            <input type="number" id="skitTeam1" name="skitTeam1" required />
+            <button type="button" onclick="submitFormTeamSkit()">Submit</button>
+          </form>
 
-<!--  --------------------------------------- Quiz It --------------------------------------- -->
+          <!--  --------------------------------------- Shake It --------------------------------------- -->
 
-<form id="team1TeamBuildingForm" class="Form">
-    <label for="teamBuildingT1">Quiz:</label>
-    <input type="number" id="quizTeam1" name="quizTeam1" required />
-    <button type="button" onclick="submitFormTeamQuizIt()">Submit</button>
-  </form>
-</div>
-</div>
-  </div>
-  
+          <form id="team1TeamBuildingForm" class="Form">
+            <label for="teamBuildingT1">Shake It:</label>
+            <input
+              type="number"
+              id="shakeItTeam1"
+              name="shakeItTeam1"
+              required
+            />
+            <button type="button" onclick="submitFormTeamShakeIt()">
+              Submit
+            </button>
+          </form>
 
+          <!--  --------------------------------------- Quiz It --------------------------------------- -->
 
-  <!-- Team 2 Forms -->
-  <div id="team2Forms" class="containerTeam">
-    <h1 class="team-center">Add Points - Team 2</h1>
-    <form id="team2TeamBuildingForm">
-      <label for="teamBuildingT2">Team Building:</label>
-      <input type="number" id="teamBuildingT2" name="teamBuildingT2" required />
-      <button type="button" onclick="submitForm('team2', 'Team Building')">Submit</button>
-    </form>
-  
-    <!-- Add other forms for Team 2 here -->
-  </div>
-  
+          <form id="team1TeamBuildingForm" class="Form">
+            <label for="teamBuildingT1">Quiz:</label>
+            <input type="number" id="quizTeam1" name="quizTeam1" required />
+            <button type="button" onclick="submitFormTeamQuizIt()">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------------------------------- Team 2 Forms --------------------------------------- -->
+
+    <div id="team2Forms" class="containerTeam">
+      <h1 class="team-center">Add Points - Team 2</h1>
+      <div class="conainer">
+        <div class="team-form">
+          <form id="team2TeamBuildingForm">
+            <label for="teamBuildingT2">Team Building:</label>
+            <input
+              type="number"
+              id="teamBuildingT2"
+              name="teamBuildingT2"
+              required
+            />
+            <button type="button" onclick="submitFormTeam2()">Submit</button>
+          </form>
+
+          <!--  --------------------------------------- Team Skit --------------------------------------- -->
+
+          <form id="team2TeamBuildingForm" class="Form">
+            <label for="teamBuildingT2">Skit:</label>
+            <input type="number" id="skitTeam2" name="skitTeam2" required />
+            <button type="button" onclick="submitFormTeamSkit2()">
+              Submit
+            </button>
+          </form>
+
+          <!--  --------------------------------------- Shake It --------------------------------------- -->
+
+          <form id="team2TeamBuildingForm" class="Form">
+            <label for="teamBuildingT2">Shake It:</label>
+            <input
+              type="number"
+              id="shakeItTeam2"
+              name="shakeItTeam2"
+              required
+            />
+            <button type="button" onclick="submitFormTeamShakeIt2()">
+              Submit
+            </button>
+          </form>
+
+          <!--  --------------------------------------- Quiz It --------------------------------------- -->
+
+          <form id="team2TeamBuildingForm" class="Form">
+            <label for="teamBuildingT1">Quiz:</label>
+            <input type="number" id="quizTeam2" name="quizTeam2" required />
+            <button type="button" onclick="submitFormTeamQuizIt2()">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------------------------------- Team 3 Forms --------------------------------------- -->
+
+    <div id="team3Forms" class="containerTeam">
+      <h1 class="team-center">Add Points - Team 3</h1>
+      <div class="conainer">
+        <div class="team-form">
+          <form id="team3TeamBuildingForm">
+            <label for="teamBuildingT3">Team Building:</label>
+            <input
+              type="number"
+              id="teamBuildingT3"
+              name="teamBuildingT3"
+              required
+            />
+            <button type="button" onclick="submitFormTeam3()">Submit</button>
+          </form>
+
+          <!--  --------------------------------------- Team Skit --------------------------------------- -->
+
+          <form id="team3TeamBuildingForm" class="Form">
+            <label for="teamBuildingT3">Skit:</label>
+            <input type="number" id="skitTeam3" name="skitTeam3" required />
+            <button type="button" onclick="submitFormTeamSkit3()">
+              Submit
+            </button>
+          </form>
+
+          <!--  --------------------------------------- Shake It --------------------------------------- -->
+
+          <form id="team3TeamBuildingForm" class="Form">
+            <label for="teamBuildingT3">Shake It:</label>
+            <input
+              type="number"
+              id="shakeItTeam3"
+              name="shakeItTeam3"
+              required
+            />
+            <button type="button" onclick="submitFormTeamShakeIt3()">
+              Submit
+            </button>
+          </form>
+
+          <!--  --------------------------------------- Quiz It --------------------------------------- -->
+
+          <form id="team3TeamBuildingForm" class="Form">
+            <label for="teamBuildingT3">Quiz:</label>
+            <input type="number" id="quizTeam3" name="quizTeam3" required />
+            <button type="button" onclick="submitFormTeamQuizIt3()">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------------------------------- Team 4 Forms --------------------------------------- -->
+
+    <div id="team4Forms" class="containerTeam">
+      <h1 class="team-center">Add Points - Team 4</h1>
+      <div class="conainer">
+        <div class="team-form">
+          <form id="team4TeamBuildingForm">
+            <label for="teamBuildingT4">Team Building:</label>
+            <input
+              type="number"
+              id="teamBuildingT4"
+              name="teamBuildingT4"
+              required
+            />
+            <button type="button" onclick="submitFormTeam4()">Submit</button>
+          </form>
+
+          <!--  --------------------------------------- Team Skit --------------------------------------- -->
+
+          <form id="team4TeamBuildingForm" class="Form">
+            <label for="teamBuildingT4">Skit:</label>
+            <input type="number" id="skitTeam4" name="skitTeam4" required />
+            <button type="button" onclick="submitFormTeamSkit4()">
+              Submit
+            </button>
+          </form>
+
+          <!--  --------------------------------------- Shake It --------------------------------------- -->
+
+          <form id="team4TeamBuildingForm" class="Form">
+            <label for="teamBuildingT4">Shake It:</label>
+            <input
+              type="number"
+              id="shakeItTeam4"
+              name="shakeItTeam4"
+              required
+            />
+            <button type="button" onclick="submitFormTeamShakeIt4()">
+              Submit
+            </button>
+          </form>
+
+          <!--  --------------------------------------- Quiz It --------------------------------------- -->
+
+          <form id="team4TeamBuildingForm" class="Form">
+            <label for="teamBuildingT4">Quiz:</label>
+            <input type="number" id="quizTeam4" name="quizTeam4" required />
+            <button type="button" onclick="submitFormTeamQuizIt4()">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------------------------------- Team 5 Forms --------------------------------------- -->
+
+    <div id="team5Forms" class="containerTeam">
+      <h1 class="team-center">Add Points - Team 5</h1>
+      <div class="conainer">
+        <div class="team-form">
+          <form id="team5TeamBuildingForm">
+            <label for="teamBuildingT5">Team Building:</label>
+            <input
+              type="number"
+              id="teamBuildingT5"
+              name="teamBuildingT5"
+              required
+            />
+            <button type="button" onclick="submitFormTeam5()">Submit</button>
+          </form>
+
+          <!--  --------------------------------------- Team Skit --------------------------------------- -->
+
+          <form id="team5TeamBuildingForm" class="Form">
+            <label for="teamBuildingT5">Skit:</label>
+            <input type="number" id="skitTeam5" name="skitTeam5" required />
+            <button type="button" onclick="submitFormTeamSkit5()">
+              Submit
+            </button>
+          </form>
+
+          <!--  --------------------------------------- Shake It --------------------------------------- -->
+
+          <form id="team5TeamBuildingForm" class="Form">
+            <label for="teamBuildingT5">Shake It:</label>
+            <input
+              type="number"
+              id="shakeItTeam5"
+              name="shakeItTeam5"
+              required
+            />
+            <button type="button" onclick="submitFormTeamShakeIt5()">
+              Submit
+            </button>
+          </form>
+
+          <!--  --------------------------------------- Quiz It --------------------------------------- -->
+
+          <form id="team5TeamBuildingForm" class="Form">
+            <label for="teamBuildingT5">Quiz:</label>
+            <input type="number" id="quizTeam5" name="quizTeam5" required />
+            <button type="button" onclick="submitFormTeamQuizIt5()">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------------------------------- Team 6 Forms --------------------------------------- -->
+
+    <div id="team6Forms" class="containerTeam">
+      <h1 class="team-center">Add Points - Team 6</h1>
+      <div class="conainer">
+        <div class="team-form">
+          <form id="team6TeamBuildingForm">
+            <label for="teamBuildingT6">Team Building:</label>
+            <input
+              type="number"
+              id="teamBuildingT6"
+              name="teamBuildingT6"
+              required
+            />
+            <button type="button" onclick="submitFormTeam6()">Submit</button>
+          </form>
+
+          <!--  --------------------------------------- Team Skit --------------------------------------- -->
+
+          <form id="team6TeamBuildingForm" class="Form">
+            <label for="teamBuildingT6">Skit:</label>
+            <input type="number" id="skitTeam6" name="skitTeam6" required />
+            <button type="button" onclick="submitFormTeamSkit6()">
+              Submit
+            </button>
+          </form>
+
+          <!--  --------------------------------------- Shake It --------------------------------------- -->
+
+          <form id="team6TeamBuildingForm" class="Form">
+            <label for="teamBuildingT6">Shake It:</label>
+            <input
+              type="number"
+              id="shakeItTeam6"
+              name="shakeItTeam6"
+              required
+            />
+            <button type="button" onclick="submitFormTeamShakeIt6()">
+              Submit
+            </button>
+          </form>
+
+          <!--  --------------------------------------- Quiz It --------------------------------------- -->
+
+          <form id="team6TeamBuildingForm" class="Form">
+            <label for="teamBuildingT6">Quiz:</label>
+            <input type="number" id="quizTeam6" name="quizTeam6" required />
+            <button type="button" onclick="submitFormTeamQuizIt6()">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------------------------------- Team 7 Forms --------------------------------------- -->
+
+    <div id="team7Forms" class="containerTeam">
+      <h1 class="team-center">Add Points - Team 7</h1>
+      <div class="conainer">
+        <div class="team-form">
+          <form id="team7TeamBuildingForm">
+            <label for="teamBuildingT7">Team Building:</label>
+            <input
+              type="number"
+              id="teamBuildingT7"
+              name="teamBuildingT7"
+              required
+            />
+            <button type="button" onclick="submitFormTeam7()">Submit</button>
+          </form>
+
+          <!--  --------------------------------------- Team Skit --------------------------------------- -->
+
+          <form id="team7TeamBuildingForm" class="Form">
+            <label for="teamBuildingT7">Skit:</label>
+            <input type="number" id="skitTeam7" name="skitTeam7" required />
+            <button type="button" onclick="submitFormTeamSkit7()">
+              Submit
+            </button>
+          </form>
+
+          <!--  --------------------------------------- Shake It --------------------------------------- -->
+
+          <form id="team7TeamBuildingForm" class="Form">
+            <label for="teamBuildingT7">Shake It:</label>
+            <input
+              type="number"
+              id="shakeItTeam7"
+              name="shakeItTeam7"
+              required
+            />
+            <button type="button" onclick="submitFormTeamShakeIt7()">
+              Submit
+            </button>
+          </form>
+
+          <!--  --------------------------------------- Quiz It --------------------------------------- -->
+
+          <form id="team7TeamBuildingForm" class="Form">
+            <label for="teamBuildingT7">Quiz:</label>
+            <input type="number" id="quizTeam7" name="quizTeam7" required />
+            <button type="button" onclick="submitFormTeamQuizIt7()">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------------------------------- Team 8 Forms --------------------------------------- -->
+
+    <div id="team8Forms" class="containerTeam">
+      <h1 class="team-center">Add Points - Team 8</h1>
+      <div class="conainer">
+        <div class="team-form">
+          <form id="team8TeamBuildingForm">
+            <label for="teamBuildingT8">Team Building:</label>
+            <input
+              type="number"
+              id="teamBuildingT8"
+              name="teamBuildingT8"
+              required
+            />
+            <button type="button" onclick="submitFormTeam8()">Submit</button>
+          </form>
+
+          <!--  --------------------------------------- Team Skit --------------------------------------- -->
+
+          <form id="team8TeamBuildingForm" class="Form">
+            <label for="teamBuildingT8">Skit:</label>
+            <input type="number" id="skitTea8" name="skitTeam8" required />
+            <button type="button" onclick="submitFormTeamSkit8()">
+              Submit
+            </button>
+          </form>
+
+          <!--  --------------------------------------- Shake It --------------------------------------- -->
+
+          <form id="team8TeamBuildingForm" class="Form">
+            <label for="teamBuildingT8">Shake It:</label>
+            <input
+              type="number"
+              id="shakeItTeam8"
+              name="shakeItTeam8"
+              required
+            />
+            <button type="button" onclick="submitFormTeamShakeIt8()">
+              Submit
+            </button>
+          </form>
+
+          <!--  --------------------------------------- Quiz It --------------------------------------- -->
+
+          <form id="team8TeamBuildingForm" class="Form">
+            <label for="teamBuildingT8">Quiz:</label>
+            <input type="number" id="quizTeam8" name="quizTeam8" required />
+            <button type="button" onclick="submitFormTeamQuizIt8()">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------------------------------- Team 9 Forms --------------------------------------- -->
+
+    <div id="team9Forms" class="containerTeam">
+      <h1 class="team-center">Add Points - Team 9</h1>
+      <div class="conainer">
+        <div class="team-form">
+          <form id="team9TeamBuildingForm">
+            <label for="teamBuildingT9">Team Building:</label>
+            <input
+              type="number"
+              id="teamBuildingT9"
+              name="teamBuildingT9"
+              required
+            />
+            <button type="button" onclick="submitFormTeam9()">Submit</button>
+          </form>
+
+          <!--  --------------------------------------- Team Skit --------------------------------------- -->
+
+          <form id="team9TeamBuildingForm" class="Form">
+            <label for="teamBuildingT9">Skit:</label>
+            <input type="number" id="skitTea9" name="skitTeam9" required />
+            <button type="button" onclick="submitFormTeamSkit9()">
+              Submit
+            </button>
+          </form>
+
+          <!--  --------------------------------------- Shake It --------------------------------------- -->
+
+          <form id="team9TeamBuildingForm" class="Form">
+            <label for="teamBuildingT9">Shake It:</label>
+            <input
+              type="number"
+              id="shakeItTeam9"
+              name="shakeItTeam9"
+              required
+            />
+            <button type="button" onclick="submitFormTeamShakeIt9()">
+              Submit
+            </button>
+          </form>
+
+          <!--  --------------------------------------- Quiz It --------------------------------------- -->
+
+          <form id="team9TeamBuildingForm" class="Form">
+            <label for="teamBuildingT9">Quiz:</label>
+            <input type="number" id="quizTeam9" name="quizTeam9" required />
+            <button type="button" onclick="submitFormTeamQuizIt9()">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------------------------------- Team 10 Forms --------------------------------------- -->
+
+    <div id="team10Forms" class="containerTeam">
+      <h1 class="team-center">Add Points - Team 10</h1>
+      <div class="conainer">
+        <div class="team-form">
+          <form id="team10TeamBuildingForm">
+            <label for="teamBuildingT10">Team Building:</label>
+            <input
+              type="number"
+              id="teamBuildingT10"
+              name="teamBuildingT10"
+              required
+            />
+            <button type="button" onclick="submitFormTeam10()">Submit</button>
+          </form>
+
+          <!--  --------------------------------------- Team Skit --------------------------------------- -->
+
+          <form id="team10TeamBuildingForm" class="Form">
+            <label for="teamBuildingT10">Skit:</label>
+            <input type="number" id="skitTea10" name="skitTeam10" required />
+            <button type="button" onclick="submitFormTeamSkit10()">
+              Submit
+            </button>
+          </form>
+
+          <!--  --------------------------------------- Shake It --------------------------------------- -->
+
+          <form id="team10TeamBuildingForm" class="Form">
+            <label for="teamBuildingT10">Shake It:</label>
+            <input
+              type="number"
+              id="shakeItTeam10"
+              name="shakeItTeam10"
+              required
+            />
+            <button type="button" onclick="submitFormTeamShakeIt10()">
+              Submit
+            </button>
+          </form>
+
+          <!--  --------------------------------------- Quiz It --------------------------------------- -->
+
+          <form id="team10TeamBuildingForm" class="Form">
+            <label for="teamBuildingT10">Quiz:</label>
+            <input type="number" id="quizTeam10" name="quizTeam10" required />
+            <button type="button" onclick="submitFormTeamQuizIt10()">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------------------------------- Team 11 Forms --------------------------------------- -->
+
+    <div id="team11Forms" class="containerTeam">
+      <h1 class="team-center">Add Points - Team 11</h1>
+      <div class="conainer">
+        <div class="team-form">
+          <form id="team11TeamBuildingForm">
+            <label for="teamBuildingT11">Team Building:</label>
+            <input
+              type="number"
+              id="teamBuildingT11"
+              name="teamBuildingT11"
+              required
+            />
+            <button type="button" onclick="submitFormTeam11()">Submit</button>
+          </form>
+
+          <!--  --------------------------------------- Team Skit --------------------------------------- -->
+
+          <form id="team11TeamBuildingForm" class="Form">
+            <label for="teamBuildingT11">Skit:</label>
+            <input type="number" id="skitTea11" name="skitTeam11" required />
+            <button type="button" onclick="submitFormTeamSkit11()">
+              Submit
+            </button>
+          </form>
+
+          <!--  --------------------------------------- Shake It --------------------------------------- -->
+
+          <form id="team11TeamBuildingForm" class="Form">
+            <label for="teamBuildingT11">Shake It:</label>
+            <input
+              type="number"
+              id="shakeItTeam11"
+              name="shakeItTeam11"
+              required
+            />
+            <button type="button" onclick="submitFormTeamShakeIt11()">
+              Submit
+            </button>
+          </form>
+
+          <!--  --------------------------------------- Quiz It --------------------------------------- -->
+
+          <form id="team11TeamBuildingForm" class="Form">
+            <label for="teamBuildingT11">Quiz:</label>
+            <input type="number" id="quizTeam11" name="quizTeam11" required />
+            <button type="button" onclick="submitFormTeamQuizIt11()">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------------------------------- Team 12 Forms --------------------------------------- -->
+
+    <div id="team12Forms" class="containerTeam">
+      <h1 class="team-center">Add Points - Team 12</h1>
+      <div class="conainer">
+        <div class="team-form">
+          <form id="team12TeamBuildingForm">
+            <label for="teamBuildingT12">Team Building:</label>
+            <input
+              type="number"
+              id="teamBuildingT12"
+              name="teamBuildingT12"
+              required
+            />
+            <button type="button" onclick="submitFormTeam12()">Submit</button>
+          </form>
+
+          <!--  --------------------------------------- Team Skit --------------------------------------- -->
+
+          <form id="team12TeamBuildingForm" class="Form">
+            <label for="teamBuildingT12">Skit:</label>
+            <input type="number" id="skitTea12" name="skitTeam12" required />
+            <button type="button" onclick="submitFormTeamSkit12()">
+              Submit
+            </button>
+          </form>
+
+          <!--  --------------------------------------- Shake It --------------------------------------- -->
+
+          <form id="team12TeamBuildingForm" class="Form">
+            <label for="teamBuildingT12">Shake It:</label>
+            <input
+              type="number"
+              id="shakeItTeam12"
+              name="shakeItTeam12"
+              required
+            />
+            <button type="button" onclick="submitFormTeamShakeIt12()">
+              Submit
+            </button>
+          </form>
+
+          <!--  --------------------------------------- Quiz It --------------------------------------- -->
+
+          <form id="team12TeamBuildingForm" class="Form">
+            <label for="teamBuildingT12">Quiz:</label>
+            <input type="number" id="quizTeam12" name="quizTeam12" required />
+            <button type="button" onclick="submitFormTeamQuizIt12()">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
 
     <!-- Add sections for other teams as needed -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
     <script src="script.js"></script>
   </body>
 </html>
