@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css"
+      integrity="sha384-nU14brUcp6StFntEOOEBvcJm4huWjB0OcIeQ3fltAfSmuZFrkAif0T+UtNGlKKQv"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Select Team</title>
+  </head>
+  <body>
+    <div class="team-center">
+       
+      <button type="button" class="btn btn-primary" onclick="selectTeam(1)">Team 1</button>
+      <button type="button" class="btn btn-primary" onclick="selectTeam(2)">Team 2</button>
+      <button type="button" class="btn btn-primary" onclick="selectTeam(3)">Team 3</button>
+      <button type="button" class="btn btn-primary" onclick="selectTeam(4)">Team 4</button>
+      <button type="button" class="btn btn-primary" onclick="selectTeam(5)">Team 5</button>
+      <button type="button" class="btn btn-primary" onclick="selectTeam(6)">Team 6</button>
+      <button type="button" class="btn btn-primary" onclick="selectTeam(7)">Team 7</button>
+      <button type="button" class="btn btn-primary" onclick="selectTeam(8)">Team 8</button>
+      <button type="button" class="btn btn-primary" onclick="selectTeam(9)">Team 9</button>
+      <button type="button" class="btn btn-primary" onclick="selectTeam(10)">Team 10</button>
+      <button type="button" class="btn btn-primary" onclick="selectTeam(11)">Team 11</button>
+      <button type="button" class="btn btn-primary" onclick="selectTeam(12)">Team 12</button>
+      
+    </div>
+
+ 
+   <div id="team1Forms" class="containerTeam">
+    <h1 class="team-center">Add Points - Team 1</h1>
+    <div class="conainer">
+    <div class = "team-form">
+    <form id="team1TeamBuildingForm">
+      <label for="teamBuildingT1">Team Building:</label>
+      <input type="number" id="teamBuildingT1" name="teamBuildingT1" required />
+      <button type="button" onclick="submitFormTeam1()">Submit</button>
+    </form>
+  
+<!--  --------------------------------------- Team Skit --------------------------------------- -->
+
+<form id="team1TeamBuildingForm" class="Form">
+    <label for="teamBuildingT1">Skit:</label>
+      <input type="number" id="skitTeam1" name="skitTeam1" required />
+    <button type="button" onclick="submitFormTeamSkit()">Submit</button>
+  </form>
+
+  <!--  --------------------------------------- Shake It --------------------------------------- -->
+
+<form id="team1TeamBuildingForm" class="Form">
+    <label for="teamBuildingT1">Shake It:</label>
+    <input type="number" id="shakeItTeam1" name="shakeItTeam1" required />
+    <button type="button" onclick="submitFormTeamShakeIt()">Submit</button>
+  </form>
+
+<!--  --------------------------------------- Quiz It --------------------------------------- -->
+
+<form id="team1TeamBuildingForm" class="Form">
+    <label for="teamBuildingT1">Quiz:</label>
+    <input type="number" id="quizTeam1" name="quizTeam1" required />
+    <button type="button" onclick="submitFormTeamQuizIt()">Submit</button>
+  </form>
+</div>
+</div>
+  </div>
+  
+
+
+  <!-- Team 2 Forms -->
+  <div id="team2Forms" class="containerTeam">
+    <h1 class="team-center">Add Points - Team 2</h1>
+    <form id="team2TeamBuildingForm">
+      <label for="teamBuildingT2">Team Building:</label>
+      <input type="number" id="teamBuildingT2" name="teamBuildingT2" required />
+      <button type="button" onclick="submitForm('team2', 'Team Building')">Submit</button>
+    </form>
+  
+    <!-- Add other forms for Team 2 here -->
+  </div>
+  
+
+    <!-- Add sections for other teams as needed -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
