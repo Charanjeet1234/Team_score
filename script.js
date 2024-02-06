@@ -478,7 +478,7 @@ function submitFormTeamSkit12() {
   updateResultPage();
 }
 
-function submitFormTeamShakeIt11() {
+function submitFormTeamShakeIt12() {
   const shakeItTeam12 = parseFloat(
     document.getElementById("shakeItTeam12").value
   );
