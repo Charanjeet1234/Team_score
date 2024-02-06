@@ -2,6 +2,7 @@
 {
     /* border: 1px solid red; */
     margin-top: 5%;
+    
 }
 .teamScore {
     display: flex;
@@ -13,9 +14,8 @@
 }
 body 
 {
-    background-image: url("background.jpeg");
-    background-repeat: no-repeat;
-    height: 100vh; 
+  background-image: url("backgroundNew.jpeg");
+    height: 100vh;  
 }
 .scoreboard {
     color:white;
