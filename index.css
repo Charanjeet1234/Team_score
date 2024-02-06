@@ -1,51 +1,233 @@
-.container-fluid
-{
-    /* border: 1px solid red; */
-    margin-top: 5%;
-    
+.FullBody {
+  /* background-color: black; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
-.teamScore {
-    display: flex;
-    justify-content: center;
-    /* border: 1px solid green; */
-    margin-top: 5%;
-    
-    /* padding: 20px; */
-}
-body 
-{
-  background-image: url("backgroundNew.jpeg");
-    height: 100vh;  
-}
+
 .scoreboard {
-    color:white;
-    font-size: 40px;
+  display: flex;
+  color: BLACK;
+  font-size: 40px;
+  margin-top: 5%;
+  height: fit-content;
+  width: fit-content;
+  /* border: 1px solid black; */
+}
+.HeadingFull {
+  margin-top: 5%;
+  display: flex;
+  border: 1px solid black;
+  width: 80%;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+.Heading {
+  display: flex;
+  justify-content: center;
+  width: 17%;
+  height: fit-content;
+  border: 1px solid black;
 }
 
-.baseScore{
-    border: 1px solid yellow;
-    width: 30%;
-    color: orangered;
-    display: flex;
-    justify-content: end;
-    font-size: 40px;
+.fullText {
+  display: flex;
+  border: 1px solid black;
+  width: 80%;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+.container {
+  margin-top: 0%;
+  line-height: 2.6em;
+  width: 100%;
 }
 
-.table
-{  
- opacity: 0.7;
- font-size: 20px;
-}
-.table-data{
-    display: flex;
-    background-color: white;
-    opacity: 0.7;
-    border-bottom: 1px solid black;
-    font-weight: bold;
-    float: right;
-}
-.table-font {
-    text-align: center;
-    font-weight: bold;
+.baseScore {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+  width: 10%;
+  height: fit-content;
 }
 
+.baseScore ul li {
+  text-decoration: none;
+  list-style: none;
+  text-align: center;
+  font-size: 20px;
+  line-height: 2.2em;
+}
+
+.team1Full {
+  display: flex;
+  /* border: 1px solid red; */
+  height: fit-content;
+  /* justify-content: space-between; */
+  width: 100%;
+}
+.team1 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: fit-content;
+  
+}
+.team2Full {
+  display: flex;
+  border: 1px solid red;
+  height: fit-content;
+  /* justify-content: space-between; */
+  width: 100%;
+}
+.team2 {
+  display: flex;
+  justify-content: center;
+  width: 17%;
+  height: fit-content;
+  /* border: 1px solid yellow; */
+}
+.team3Full {
+  display: flex;
+  border: 1px solid red;
+  height: fit-content;
+  /* justify-content: space-between; */
+  width: 100%;
+}
+.team3 {
+  display: flex;
+  justify-content: center;
+  width: 17%;
+  height: fit-content;
+  /* border: 1px solid yellow; */
+}
+.team4Full {
+  display: flex;
+  border: 1px solid red;
+  height: fit-content;
+  /* justify-content: space-between; */
+  width: 100%;
+}
+.team4 {
+  display: flex;
+  justify-content: center;
+  width: 17%;
+  height: fit-content;
+  /* border: 1px solid yellow; */
+}
+.team5Full {
+  display: flex;
+  border: 1px solid red;
+  height: fit-content;
+  /* justify-content: space-between; */
+  width: 100%;
+}
+.team5 {
+  display: flex;
+  justify-content: center;
+  width: 17%;
+  height: fit-content;
+  /* border: 1px solid yellow; */
+}
+.team6Full {
+  display: flex;
+  border: 1px solid red;
+  height: fit-content;
+  /* justify-content: space-between; */
+  width: 100%;
+}
+.team6 {
+  display: flex;
+  justify-content: center;
+  width: 17%;
+  height: fit-content;
+  /* border: 1px solid yellow; */
+}
+.team7Full {
+  display: flex;
+  border: 1px solid red;
+  height: fit-content;
+  /* justify-content: space-between; */
+  width: 100%;
+}
+.team7 {
+  display: flex;
+  justify-content: center;
+  width: 17%;
+  height: fit-content;
+  /* border: 1px solid yellow; */
+}
+.team8Full {
+  display: flex;
+  border: 1px solid red;
+  height: fit-content;
+  /* justify-content: space-between; */
+  width: 100%;
+}
+.team8 {
+  display: flex;
+  justify-content: center;
+  width: 17%;
+  height: fit-content;
+  /* border: 1px solid yellow; */
+}
+
+.team9Full {
+  display: flex;
+  border: 1px solid red;
+  height: fit-content;
+  /* justify-content: space-between; */
+  width: 100%;
+}
+.team9 {
+  display: flex;
+  justify-content: center;
+  width: 17%;
+  height: fit-content;
+  /* border: 1px solid yellow; */
+}
+
+.team10Full {
+  display: flex;
+  border: 1px solid red;
+  height: fit-content;
+  /* justify-content: space-between; */
+  width: 100%;
+}
+.team10 {
+  display: flex;
+  justify-content: center;
+  width: 17%;
+  height: fit-content;
+  /* border: 1px solid yellow; */
+}
+
+.team11Full {
+  display: flex;
+  border: 1px solid red;
+  height: fit-content;
+  /* justify-content: space-between; */
+  width: 100%;
+}
+.team11 {
+  display: flex;
+  justify-content: center;
+  width: 17%;
+  height: fit-content;
+  /* border: 1px solid yellow; */
+}
+.team12Full {
+  display: flex;
+  border: 1px solid red;
+  height: fit-content;
+  /* justify-content: space-between; */
+  width: 100%;
+}
+.team12 {
+  display: flex;
+  justify-content: center;
+  width: 17%;
+  height: fit-content;
+  /* border: 1px solid yellow; */
+}
