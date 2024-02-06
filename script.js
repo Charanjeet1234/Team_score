@@ -512,7 +512,7 @@ function updateResultPage() {
   const xhr = new XMLHttpRequest();
   xhr.onreadystatechange = function () {
     if (xhr.readyState == 4 && xhr.status == 200) {
-    //   alert("Point Added successfully!"); // Successfully updated result.html
+      alert("Point Added successfully!"); // Successfully updated result.html
     }
   };
 
