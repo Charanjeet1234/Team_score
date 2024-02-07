@@ -60,174 +60,21 @@
   line-height: 2.2em;
 }
 
-.team1Full {
+.team1Full  {
   display: flex;
-  /* border: 1px solid red; */
   height: fit-content;
-  /* justify-content: space-between; */
   width: 100%;
 }
-.team1 {
+.team1Full, .team2Full, .team3Full, .team4Full, .team5Full, .team6Full, .team7Full, .team8Full, .team9Full, .team10Full, .team11Full, .team12Full {
+  display: flex;
+  border: 1px solid red;
+  height: fit-content;
+  width: 100%;
+}
+.team {
   display: flex;
   justify-content: center;
   width: 100%;
   height: fit-content;
   
-}
-.team2Full {
-  display: flex;
-  border: 1px solid red;
-  height: fit-content;
-  /* justify-content: space-between; */
-  width: 100%;
-}
-.team2 {
-  display: flex;
-  justify-content: center;
-  width: 17%;
-  height: fit-content;
-  /* border: 1px solid yellow; */
-}
-.team3Full {
-  display: flex;
-  border: 1px solid red;
-  height: fit-content;
-  /* justify-content: space-between; */
-  width: 100%;
-}
-.team3 {
-  display: flex;
-  justify-content: center;
-  width: 17%;
-  height: fit-content;
-  /* border: 1px solid yellow; */
-}
-.team4Full {
-  display: flex;
-  border: 1px solid red;
-  height: fit-content;
-  /* justify-content: space-between; */
-  width: 100%;
-}
-.team4 {
-  display: flex;
-  justify-content: center;
-  width: 17%;
-  height: fit-content;
-  /* border: 1px solid yellow; */
-}
-.team5Full {
-  display: flex;
-  border: 1px solid red;
-  height: fit-content;
-  /* justify-content: space-between; */
-  width: 100%;
-}
-.team5 {
-  display: flex;
-  justify-content: center;
-  width: 17%;
-  height: fit-content;
-  /* border: 1px solid yellow; */
-}
-.team6Full {
-  display: flex;
-  border: 1px solid red;
-  height: fit-content;
-  /* justify-content: space-between; */
-  width: 100%;
-}
-.team6 {
-  display: flex;
-  justify-content: center;
-  width: 17%;
-  height: fit-content;
-  /* border: 1px solid yellow; */
-}
-.team7Full {
-  display: flex;
-  border: 1px solid red;
-  height: fit-content;
-  /* justify-content: space-between; */
-  width: 100%;
-}
-.team7 {
-  display: flex;
-  justify-content: center;
-  width: 17%;
-  height: fit-content;
-  /* border: 1px solid yellow; */
-}
-.team8Full {
-  display: flex;
-  border: 1px solid red;
-  height: fit-content;
-  /* justify-content: space-between; */
-  width: 100%;
-}
-.team8 {
-  display: flex;
-  justify-content: center;
-  width: 17%;
-  height: fit-content;
-  /* border: 1px solid yellow; */
-}
-
-.team9Full {
-  display: flex;
-  border: 1px solid red;
-  height: fit-content;
-  /* justify-content: space-between; */
-  width: 100%;
-}
-.team9 {
-  display: flex;
-  justify-content: center;
-  width: 17%;
-  height: fit-content;
-  /* border: 1px solid yellow; */
-}
-
-.team10Full {
-  display: flex;
-  border: 1px solid red;
-  height: fit-content;
-  /* justify-content: space-between; */
-  width: 100%;
-}
-.team10 {
-  display: flex;
-  justify-content: center;
-  width: 17%;
-  height: fit-content;
-  /* border: 1px solid yellow; */
-}
-
-.team11Full {
-  display: flex;
-  border: 1px solid red;
-  height: fit-content;
-  /* justify-content: space-between; */
-  width: 100%;
-}
-.team11 {
-  display: flex;
-  justify-content: center;
-  width: 17%;
-  height: fit-content;
-  /* border: 1px solid yellow; */
-}
-.team12Full {
-  display: flex;
-  border: 1px solid red;
-  height: fit-content;
-  /* justify-content: space-between; */
-  width: 100%;
-}
-.team12 {
-  display: flex;
-  justify-content: center;
-  width: 17%;
-  height: fit-content;
-  /* border: 1px solid yellow; */
 }

@@ -13,10 +13,37 @@ function selectTeam(teamNumber) {
   }
 }
 
+function compareResultsAndRank() {
+  const teams = [];
+
+  // Retrieve scores from localStorage and push them into the teams array
+  for (let i = 1; i <= 12; i++) {
+    const teamScore = parseFloat(localStorage.getItem(`resultTeam${i}`)) || 0;
+    teams.push({ teamNumber: i, score: teamScore });
+  }
+
+  // Sort teams in descending order based on score
+  teams.sort((a, b) => b.score - a.score);
+  console.log("Sorted Teams:", teams); // Debugging: Log sorted teams
+
+  // Assign ranks based on sorted order
+  let currentRank = 1;
+  for (let i = 0; i < teams.length; i++) {
+    const teamNumber = teams[i].teamNumber;
+    const rank =
+      i > 0 && teams[i].score === teams[i - 1].score ? currentRank : i + 1;
+    console.log(`Team ${teamNumber}: Rank ${rank}`); // Debugging: Log rank for each team
+    currentRank = rank + 1; // Increment rank for the next iteration
+    localStorage.setItem(`team${teamNumber}Rank`, rank);
+  }
+}
+
 function submitFormTeam1() {
   const teamBuildingT1 = document.getElementById("teamBuildingT1").value;
   localStorage.setItem("teamBuildingT1", teamBuildingT1) || 0;
+  console.log("Form 1 submitted");
   updateResultPage();
+  compareResultsAndRank();
 }
 
 function submitFormTeamSkit() {
@@ -40,17 +67,23 @@ function submitFormTeamQuizIt() {
   updateResultPage();
 }
 
-function submitFormOverallTeam1()
-{
-  const team1teambuildingscore = parseFloat(localStorage.getItem("teamBuildingT1")) || 0;
+function submitFormOverallTeam1() {
+  const team1teambuildingscore =
+    parseFloat(localStorage.getItem("teamBuildingT1")) || 0;
   const team1skitscore = parseFloat(localStorage.getItem("skitTeam1")) || 0;
-  const team1shakeitscore = parseFloat(localStorage.getItem("shakeItTeam1")) || 0;
+  const team1shakeitscore =
+    parseFloat(localStorage.getItem("shakeItTeam1")) || 0;
   const team1quizscore = parseFloat(localStorage.getItem("quizTeam1")) || 0;
 
-  const resultTeam1 = team1teambuildingscore + team1skitscore + team1shakeitscore + team1quizscore;
-  document.getElementById('resultTeam1').value = resultTeam1
+  const resultTeam1 =
+    team1teambuildingscore +
+    team1skitscore +
+    team1shakeitscore +
+    team1quizscore;
+  document.getElementById("resultTeam1").value = resultTeam1;
   localStorage.setItem("resultTeam1", resultTeam1);
-  
+  compareResultsAndRank();
+  updateResultPage();
 }
 // ////////////////////////////////////// Function for team 2 ////////////////////////////////////////
 
@@ -80,17 +113,23 @@ function submitFormTeamQuizIt2() {
   updateResultPage();
 }
 
-function submitFormOverallTeam2()
-{
-  const team2teambuildingscore = parseFloat(localStorage.getItem("teamBuildingT2")) || 0;
+function submitFormOverallTeam2() {
+  const team2teambuildingscore =
+    parseFloat(localStorage.getItem("teamBuildingT2")) || 0;
   const team2skitscore = parseFloat(localStorage.getItem("skitTeam2")) || 0;
-  const team2shakeitscore = parseFloat(localStorage.getItem("shakeItTeam2")) || 0;
+  const team2shakeitscore =
+    parseFloat(localStorage.getItem("shakeItTeam2")) || 0;
   const team2quizscore = parseFloat(localStorage.getItem("quizTeam2")) || 0;
 
-  const resultTeam2 = team2teambuildingscore + team2skitscore + team2shakeitscore + team2quizscore;
-  document.getElementById('resultTeam2').value = resultTeam2
+  const resultTeam2 =
+    team2teambuildingscore +
+    team2skitscore +
+    team2shakeitscore +
+    team2quizscore;
+  document.getElementById("resultTeam2").value = resultTeam2;
   localStorage.setItem("resultTeam2", resultTeam2);
-  
+  compareResultsAndRank();
+  updateResultPage();
 }
 // ////////////////////////////////////// Function for team 3 ////////////////////////////////////////
 
@@ -120,17 +159,22 @@ function submitFormTeamQuizIt3() {
   updateResultPage();
 }
 
-function submitFormOverallTeam3()
-{
-  const team3teambuildingscore = parseFloat(localStorage.getItem("teamBuildingT3")) || 0;
+function submitFormOverallTeam3() {
+  const team3teambuildingscore =
+    parseFloat(localStorage.getItem("teamBuildingT3")) || 0;
   const team3skitscore = parseFloat(localStorage.getItem("skitTeam3")) || 0;
-  const team3shakeitscore = parseFloat(localStorage.getItem("shakeItTeam3")) || 0;
+  const team3shakeitscore =
+    parseFloat(localStorage.getItem("shakeItTeam3")) || 0;
   const team3quizscore = parseFloat(localStorage.getItem("quizTeam3")) || 0;
 
-  const resultTeam3 = team3teambuildingscore + team3skitscore + team3shakeitscore + team3quizscore;
-  document.getElementById('resultTeam3').value = resultTeam3
+  const resultTeam3 =
+    team3teambuildingscore +
+    team3skitscore +
+    team3shakeitscore +
+    team3quizscore;
+  document.getElementById("resultTeam3").value = resultTeam3;
   localStorage.setItem("resultTeam3", resultTeam3);
-  
+  compareResultsAndRank();
 }
 
 // ////////////////////////////////////// Function for team 4 ////////////////////////////////////////
@@ -161,17 +205,22 @@ function submitFormTeamQuizIt4() {
   updateResultPage();
 }
 
-function submitFormOverallTeam4()
-{
-  const team4teambuildingscore = parseFloat(localStorage.getItem("teamBuildingT4")) || 0;
+function submitFormOverallTeam4() {
+  const team4teambuildingscore =
+    parseFloat(localStorage.getItem("teamBuildingT4")) || 0;
   const team4skitscore = parseFloat(localStorage.getItem("skitTeam4")) || 0;
-  const team4shakeitscore = parseFloat(localStorage.getItem("shakeItTeam4")) || 0;
+  const team4shakeitscore =
+    parseFloat(localStorage.getItem("shakeItTeam4")) || 0;
   const team4quizscore = parseFloat(localStorage.getItem("quizTeam4")) || 0;
 
-  const resultTeam4 = team4teambuildingscore + team4skitscore + team4shakeitscore + team4quizscore;
-  document.getElementById('resultTeam4').value = resultTeam4
+  const resultTeam4 =
+    team4teambuildingscore +
+    team4skitscore +
+    team4shakeitscore +
+    team4quizscore;
+  document.getElementById("resultTeam4").value = resultTeam4;
   localStorage.setItem("resultTeam4", resultTeam4);
-  
+  compareResultsAndRank();
 }
 
 // ////////////////////////////////////// Function for team 5 ////////////////////////////////////////
@@ -202,19 +251,23 @@ function submitFormTeamQuizIt5() {
   updateResultPage();
 }
 
-function submitFormOverallTeam5()
-{
-  const team5teambuildingscore = parseFloat(localStorage.getItem("teamBuildingT5")) || 0;
+function submitFormOverallTeam5() {
+  const team5teambuildingscore =
+    parseFloat(localStorage.getItem("teamBuildingT5")) || 0;
   const team5skitscore = parseFloat(localStorage.getItem("skitTeam5")) || 0;
-  const team5shakeitscore = parseFloat(localStorage.getItem("shakeItTeam5")) || 0;
+  const team5shakeitscore =
+    parseFloat(localStorage.getItem("shakeItTeam5")) || 0;
   const team5quizscore = parseFloat(localStorage.getItem("quizTeam5")) || 0;
 
-  const resultTeam5 = team5teambuildingscore + team5skitscore + team5shakeitscore + team5quizscore;
-  document.getElementById('resultTeam5').value = resultTeam5
+  const resultTeam5 =
+    team5teambuildingscore +
+    team5skitscore +
+    team5shakeitscore +
+    team5quizscore;
+  document.getElementById("resultTeam5").value = resultTeam5;
   localStorage.setItem("resultTeam5", resultTeam5);
-  
+  compareResultsAndRank();
 }
-
 
 //////////////////////////////////////// Function for team 6 ////////////////////////////////////////
 
@@ -244,20 +297,23 @@ function submitFormTeamQuizIt6() {
   updateResultPage();
 }
 
-
-function submitFormOverallTeam6()
-{
-  const team6teambuildingscore = parseFloat(localStorage.getItem("teamBuildingT6")) || 0;
+function submitFormOverallTeam6() {
+  const team6teambuildingscore =
+    parseFloat(localStorage.getItem("teamBuildingT6")) || 0;
   const team6skitscore = parseFloat(localStorage.getItem("skitTeam6")) || 0;
-  const team6shakeitscore = parseFloat(localStorage.getItem("shakeItTeam6")) || 0;
+  const team6shakeitscore =
+    parseFloat(localStorage.getItem("shakeItTeam6")) || 0;
   const team6quizscore = parseFloat(localStorage.getItem("quizTeam6")) || 0;
 
-  const resultTeam6 = team6teambuildingscore + team6skitscore + team6shakeitscore + team6quizscore;
-  document.getElementById('resultTeam6').value = resultTeam6
+  const resultTeam6 =
+    team6teambuildingscore +
+    team6skitscore +
+    team6shakeitscore +
+    team6quizscore;
+  document.getElementById("resultTeam6").value = resultTeam6;
   localStorage.setItem("resultTeam6", resultTeam6);
-  
+  compareResultsAndRank();
 }
-
 
 //////////////////////////////////////// Function for team 7 ////////////////////////////////////////
 
@@ -287,19 +343,23 @@ function submitFormTeamQuizIt7() {
   updateResultPage();
 }
 
-function submitFormOverallTeam7()
-{
-  const team7teambuildingscore = parseFloat(localStorage.getItem("teamBuildingT7")) || 0;
+function submitFormOverallTeam7() {
+  const team7teambuildingscore =
+    parseFloat(localStorage.getItem("teamBuildingT7")) || 0;
   const team7skitscore = parseFloat(localStorage.getItem("skitTeam7")) || 0;
-  const team7shakeitscore = parseFloat(localStorage.getItem("shakeItTeam7")) || 0;
+  const team7shakeitscore =
+    parseFloat(localStorage.getItem("shakeItTeam7")) || 0;
   const team7quizscore = parseFloat(localStorage.getItem("quizTeam7")) || 0;
 
-  const resultTeam7 = team7teambuildingscore + team7skitscore + team7shakeitscore + team7quizscore;
-  document.getElementById('resultTeam7').value = resultTeam7
+  const resultTeam7 =
+    team7teambuildingscore +
+    team7skitscore +
+    team7shakeitscore +
+    team7quizscore;
+  document.getElementById("resultTeam7").value = resultTeam7;
   localStorage.setItem("resultTeam7", resultTeam7);
-  
+  compareResultsAndRank();
 }
-
 
 //////////////////////////////////////// Function for team 8 ////////////////////////////////////////
 
@@ -329,19 +389,23 @@ function submitFormTeamQuizIt8() {
   updateResultPage();
 }
 
-function submitFormOverallTeam8()
-{
-  const team8teambuildingscore = parseFloat(localStorage.getItem("teamBuildingT8")) || 0;
+function submitFormOverallTeam8() {
+  const team8teambuildingscore =
+    parseFloat(localStorage.getItem("teamBuildingT8")) || 0;
   const team8skitscore = parseFloat(localStorage.getItem("skitTeam8")) || 0;
-  const team8shakeitscore = parseFloat(localStorage.getItem("shakeItTeam8")) || 0;
+  const team8shakeitscore =
+    parseFloat(localStorage.getItem("shakeItTeam8")) || 0;
   const team8quizscore = parseFloat(localStorage.getItem("quizTeam8")) || 0;
 
-  const resultTeam8 = team8teambuildingscore + team8skitscore + team8shakeitscore + team8quizscore;
-  document.getElementById('resultTeam8').value = resultTeam8
+  const resultTeam8 =
+    team8teambuildingscore +
+    team8skitscore +
+    team8shakeitscore +
+    team8quizscore;
+  document.getElementById("resultTeam8").value = resultTeam8;
   localStorage.setItem("resultTeam8", resultTeam8);
-  
+  compareResultsAndRank();
 }
-
 
 //////////////////////////////////////// Function for team 9 ////////////////////////////////////////
 
@@ -357,7 +421,6 @@ function submitFormTeamSkit9() {
   updateResultPage();
 }
 
-
 function submitFormTeamShakeIt9() {
   const shakeItTeam9 = parseFloat(
     document.getElementById("shakeItTeam9").value
@@ -372,17 +435,22 @@ function submitFormTeamQuizIt9() {
   updateResultPage();
 }
 
-function submitFormOverallTeam9()
-{
-  const team9teambuildingscore = parseFloat(localStorage.getItem("teamBuildingT9")) || 0;
+function submitFormOverallTeam9() {
+  const team9teambuildingscore =
+    parseFloat(localStorage.getItem("teamBuildingT9")) || 0;
   const team9skitscore = parseFloat(localStorage.getItem("skitTeam9")) || 0;
-  const team9shakeitscore = parseFloat(localStorage.getItem("shakeItTeam9")) || 0;
+  const team9shakeitscore =
+    parseFloat(localStorage.getItem("shakeItTeam9")) || 0;
   const team9quizscore = parseFloat(localStorage.getItem("quizTeam9")) || 0;
 
-  const resultTeam9 = team9teambuildingscore + team9skitscore + team9shakeitscore + team9quizscore;
-  document.getElementById('resultTeam9').value = resultTeam9
+  const resultTeam9 =
+    team9teambuildingscore +
+    team9skitscore +
+    team9shakeitscore +
+    team9quizscore;
+  document.getElementById("resultTeam9").value = resultTeam9;
   localStorage.setItem("resultTeam9", resultTeam9);
-  
+  compareResultsAndRank();
 }
 //////////////////////////////////////// Function for team 10 ////////////////////////////////////////
 
@@ -412,17 +480,22 @@ function submitFormTeamQuizIt10() {
   updateResultPage();
 }
 
-function submitFormOverallTeam10()
-{
-  const team10teambuildingscore = parseFloat(localStorage.getItem("teamBuildingT10")) || 0;
+function submitFormOverallTeam10() {
+  const team10teambuildingscore =
+    parseFloat(localStorage.getItem("teamBuildingT10")) || 0;
   const team10skitscore = parseFloat(localStorage.getItem("skitTeam10")) || 0;
-  const team10shakeitscore = parseFloat(localStorage.getItem("shakeItTeam10")) || 0;
+  const team10shakeitscore =
+    parseFloat(localStorage.getItem("shakeItTeam10")) || 0;
   const team10quizscore = parseFloat(localStorage.getItem("quizTeam10")) || 0;
 
-  const resultTeam10 = team10teambuildingscore + team10skitscore + team10shakeitscore + team10quizscore;
-  document.getElementById('resultTeam10').value = resultTeam10
+  const resultTeam10 =
+    team10teambuildingscore +
+    team10skitscore +
+    team10shakeitscore +
+    team10quizscore;
+  document.getElementById("resultTeam10").value = resultTeam10;
   localStorage.setItem("resultTeam10", resultTeam10);
-  
+  compareResultsAndRank();
 }
 /////////////////////////////////////// Function for team 11 ////////////////////////////////////////
 
@@ -452,17 +525,22 @@ function submitFormTeamQuizIt11() {
   updateResultPage();
 }
 
-function submitFormOverallTeam11()
-{
-  const team11teambuildingscore = parseFloat(localStorage.getItem("teamBuildingT11")) || 0;
+function submitFormOverallTeam11() {
+  const team11teambuildingscore =
+    parseFloat(localStorage.getItem("teamBuildingT11")) || 0;
   const team11skitscore = parseFloat(localStorage.getItem("skitTeam11")) || 0;
-  const team11shakeitscore = parseFloat(localStorage.getItem("shakeItTeam11")) || 0;
+  const team11shakeitscore =
+    parseFloat(localStorage.getItem("shakeItTeam11")) || 0;
   const team11quizscore = parseFloat(localStorage.getItem("quizTeam11")) || 0;
 
-  const resultTeam11 = team11teambuildingscore + team11skitscore + team11shakeitscore + team11quizscore;
-  document.getElementById('resultTeam11').value = resultTeam11
+  const resultTeam11 =
+    team11teambuildingscore +
+    team11skitscore +
+    team11shakeitscore +
+    team11quizscore;
+  document.getElementById("resultTeam11").value = resultTeam11;
   localStorage.setItem("resultTeam11", resultTeam11);
-  
+  compareResultsAndRank();
 }
 /////////////////////////////////////// Function for team 11 ////////////////////////////////////////
 
@@ -492,27 +570,30 @@ function submitFormTeamQuizIt12() {
   updateResultPage();
 }
 
-function submitFormOverallTeam12()
-{
-  const team12teambuildingscore = parseFloat(localStorage.getItem("teamBuildingT12")) || 0;
+function submitFormOverallTeam12() {
+  const team12teambuildingscore =
+    parseFloat(localStorage.getItem("teamBuildingT12")) || 0;
   const team12skitscore = parseFloat(localStorage.getItem("skitTeam12")) || 0;
-  const team12shakeitscore = parseFloat(localStorage.getItem("shakeItTeam12")) || 0;
+  const team12shakeitscore =
+    parseFloat(localStorage.getItem("shakeItTeam12")) || 0;
   const team12quizscore = parseFloat(localStorage.getItem("quizTeam12")) || 0;
 
-  const resultTeam12 = team12teambuildingscore + team12skitscore + team12shakeitscore + team12quizscore;
-  document.getElementById('resultTeam12').value = resultTeam12
+  const resultTeam12 =
+    team12teambuildingscore +
+    team12skitscore +
+    team12shakeitscore +
+    team12quizscore;
+  document.getElementById("resultTeam12").value = resultTeam12;
   localStorage.setItem("resultTeam12", resultTeam12);
-  
+  compareResultsAndRank();
 }
-
-
 
 function updateResultPage() {
   // Use AJAX to update result.html without reloading
   const xhr = new XMLHttpRequest();
   xhr.onreadystatechange = function () {
     if (xhr.readyState == 4 && xhr.status == 200) {
-      alert("Point Added successfully!"); // Successfully updated result.html
+      // alert("Point Added successfully!"); // Successfully updated result.html
     }
   };
 
