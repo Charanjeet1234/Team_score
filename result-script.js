@@ -199,3 +199,4 @@ container.innerHTML = '';
 teamArray.forEach(teamDiv => {
     container.appendChild(teamDiv);
 });
+

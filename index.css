@@ -60,12 +60,23 @@
   line-height: 2.2em;
 }
 
-.team1Full  {
+.team1Full {
   display: flex;
   height: fit-content;
   width: 100%;
 }
-.team1Full, .team2Full, .team3Full, .team4Full, .team5Full, .team6Full, .team7Full, .team8Full, .team9Full, .team10Full, .team11Full, .team12Full {
+.team1Full,
+.team2Full,
+.team3Full,
+.team4Full,
+.team5Full,
+.team6Full,
+.team7Full,
+.team8Full,
+.team9Full,
+.team10Full,
+.team11Full,
+.team12Full {
   display: flex;
   border: 1px solid red;
   height: fit-content;
@@ -76,5 +87,4 @@
   justify-content: center;
   width: 100%;
   height: fit-content;
-  
 }
