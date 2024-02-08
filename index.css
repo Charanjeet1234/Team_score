@@ -1,55 +1,230 @@
+body{
+  background: linear-gradient(0deg, rgba(0,246,88,1) 30%, rgba(45,124,253,1) 70%);
+}
+.FullScoreSheet
+{
+  height: 100vh;
+}
 .FullBody {
-  /* background-color: black; */
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-top: 2%;
+}
+.scoreboard a {
+  color: orange;
+  text-decoration: none;
 }
 
 .scoreboard {
-  display: flex;
-  color: BLACK;
+  color: orange;
   font-size: 40px;
-  margin-top: 5%;
   height: fit-content;
-  width: fit-content;
-  /* border: 1px solid black; */
-}
-.HeadingFull {
-  margin-top: 5%;
-  display: flex;
+  width: 300px;
+  text-align: center;
   border: 1px solid black;
-  width: 80%;
+  background-color: black;
+  border-radius: 20px 20px 5px 5px;
+}
+
+.HeadingFull {
+  margin-top: 40px;
+  display: flex;
+  border-bottom: 3px solid white;
+  width: 1350px;
   margin-right: 10%;
   margin-left: 10%;
+  background-color: black;
+  /* margin-right: 1%; */
+
 }
 .Heading {
   display: flex;
   justify-content: center;
   width: 17%;
   height: fit-content;
-  border: 1px solid black;
+  color: orangered;
+  font-size: 17px;
+  /* border: 1px solid red; */
 }
 
 .fullText {
   display: flex;
-  border: 1px solid black;
-  width: 80%;
+  /* border: 1px solid red; */
+  width: 1350px;
   margin-right: 10%;
   margin-left: 10%;
+  background-color: black;
+  /* border: 1px solid yellow; */
+
 }
 .container {
+ width: 100%;
+}
+.insideTeam
+{
+  border: 1px solid orange;
+  width: 50px;
+  text-align: center;
   margin-top: 0%;
-  line-height: 2.6em;
-  width: 100%;
+  background-color: orange;
+  border-radius: 10px;
+  margin-bottom: 1.5%;
+}
+.insideTeam2
+{
+  border: 1px solid brown;
+  width: 50px;
+  text-align: center;
+  margin-top: 0%;
+  background-color: brown;
+  border-radius: 10px;
+  margin-bottom: 1.5%;
+}
+
+.insideTeam3
+{
+  border: 1px solid rgb(255, 0, 255);
+  width: 50px;
+  text-align: center;
+  margin-top: 0%;
+  background-color: rgb(255, 0, 255);
+  border-radius: 10px;
+  margin-bottom: 1.5%;
+}
+
+.insideTeam4
+{
+  border: 1px solid rgb(191, 0, 255);
+  width: 50px;
+  text-align: center;
+  margin-top: 0%;
+  background-color: rgb(191, 0, 255);
+  border-radius: 10px;
+  margin-bottom: 1.5%;
+}
+
+.insideTeam5
+{
+  border: 1px solid rgb(255, 0, 0);
+  width: 50px;
+  text-align: center;
+  margin-top: 0%;
+  background-color: rgb(255, 0, 0);
+  border-radius: 10px;
+  margin-bottom: 1.5%;
+}
+
+.insideTeam6
+{
+  border: 1px solid rgb(179, 77, 77);
+  width: 50px;
+  text-align: center;
+  margin-top: 0%;
+  background-color: rgb(179, 77, 77);
+  border-radius: 10px;
+  margin-bottom: 1.5%;
+}
+
+.insideTeam7
+{
+  border: 1px solid rgb(198, 57, 57);
+  width: 50px;
+  text-align: center;
+  margin-top: 0%;
+  background-color: rgb(198, 57, 57);
+  border-radius: 10px;
+  margin-bottom: 1.5%;
+}
+
+.insideTeam7
+{
+  border: 1px solid 	rgb(0, 0, 255);
+  width: 50px;
+  text-align: center;
+  margin-top: 0%;
+  background-color: 	rgb(0, 0, 255);
+  border-radius: 10px;
+  margin-bottom: 1.5%;
+}
+
+.insideTeam8
+{
+  border: 1px solid	rgb(255, 128, 0);
+  width: 50px;
+  text-align: center;
+  margin-top: 0%;
+  background-color: rgb(255, 128, 0);
+  border-radius: 10px;
+  margin-bottom: 1.5%;
+}
+
+.insideTeam9
+{
+  border: 1px solid	rgb(255, 128, 0);
+  width: 50px;
+  text-align: center;
+  margin-top: 0%;
+  background-color: rgb(255, 128, 0);
+  border-radius: 10px;
+  margin-bottom: 1.5%;
+}
+
+.insideTeam10
+{
+  border: 1px solid		rgb(255, 64, 0);
+  width: 50px;
+  text-align: center;
+  margin-top: 0%;
+  background-color: 	rgb(255, 64, 0);
+  border-radius: 10px;
+  margin-bottom: 1.5%;
+}
+
+.insideTeam11
+{
+  border: 1px solid	rgb(255, 0, 0);
+  width: 50px;
+  text-align: center;
+  margin-top: 0%;
+  background-color: rgb(255, 0, 0);
+  border-radius: 10px;
+  margin-bottom: 1.5%;
+}
+
+.insideTeam12
+{
+  border: 1px solid	rgb(179, 77, 77);
+  width: 50px;
+  text-align: center;
+  margin-top: 0%;
+  background-color: rgb(179, 77, 77);
+  border-radius: 10px;
+  margin-bottom: 1.5%;
+}
+
+.points
+{
+  width: 50px;
+  text-align: center;
+  margin-top: 0%;
+  background-color: grey;
+  border-radius: 10px;
+  margin-bottom: 1.5%;
 }
 
 .baseScore {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   display: flex;
   justify-content: center;
-  font-size: 15px;
-  width: 10%;
+  font-size: 20px;
+  width: 120px;
   height: fit-content;
+  color: orangered;
+  background-color:black;
+  margin-top: 0.5%;
+  /* border: 1px solid pink; */
+  
 }
 
 .baseScore ul li {
@@ -57,13 +232,20 @@
   list-style: none;
   text-align: center;
   font-size: 20px;
-  line-height: 2.2em;
+  line-height: 2.8em;
+  color: orange;
+  background-color: black;
+  
 }
 
-.team1Full {
+.teamFullHeading
+{
   display: flex;
+  /* border: 1px solid red; */
   height: fit-content;
   width: 100%;
+  line-height: 2.75em;
+  background-color: black;
 }
 .team1Full,
 .team2Full,
@@ -78,13 +260,24 @@
 .team11Full,
 .team12Full {
   display: flex;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   height: fit-content;
   width: 100%;
+  line-height: 2.75em;
+  background-color: black;
+  border: 0.5px solid grey;
+  border-radius: 15px;
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
+  justify-content:center;
 }
 .team {
   display: flex;
   justify-content: center;
   width: 100%;
   height: fit-content;
+  font-size: 20px;
+  margin-top: 0.4%;
+  color: white;
+  /* border: 1px solid white; */
 }
