@@ -24,23 +24,24 @@
   <body>
     
     <div class="FullBody">
-      <div class="scoreboard"><a href ="Allteams.html">SCOREBOARD</a></div>
+      <div class="scoreboard"><a href ="Allteams.html">Game 50 Leader Board</a></div>
       </div>
     <div class = "FullScoreSheet">
     <div class="HeadingFull">
-      <div class="baseScore">Base Score</div>
+      <!-- <div class="baseScore">Base Score</div> -->
       <div class="teamFullHeading">
         <div class="Heading">Teams</div>
         <div class="Heading">Rank</div>
         <div class="Heading">Overall Score</div>
-        <div class="Heading">Team Building (points)</div>
-        <div class="Heading">Skit (Points)</div>
-        <div class="Heading">Shake It (Points)</div>
-        <div class="Heading">Quiz (Points)</div>
+        <div class="Heading">Team Building</div>
+        <div class="Heading">Skit</div>
+        <div class="Heading">Shake It</div>
+        <div class="Heading">Quiz</div>
+        <div class="Heading">Carbon footprint</div>
       </div>
     </div>
     <div class="fullText">
-      <div class="baseScore">
+      <!-- <div class="baseScore">
         <ul>
           <li>120</li>
           <li>110</li>
@@ -55,9 +56,9 @@
           <li>20</li>
           <li>10</li>
         </ul>
-      </div>
+      </div> -->
       <!-- ---------------------------------------Base score Finished here--------------------------------------- -->
-      <div class="container">
+      <div class="container-fluid">
         <div class="team1Full">
           <div class="team"><span class = "insideTeam">1</span></div>
           <div class="team"><span class = "points" id="team1Rank"></span></div>
@@ -66,6 +67,7 @@
           <div class="team"><span class = "points" id="skitTeam1L"></span></div>
           <div class="team"><span class = "points" id="shakeItTeam1L"></span> </div>
           <div class="team"><span class = "points" id="quizTeam1L"></span></div>
+          <div class="team"><span class = "points" id="carbonTeam1L"></span></div>
         </div>
 
         <!-- ---------------------------------------Teams 1 Finsihed here--------------------------------------- -->
@@ -77,6 +79,7 @@
           <div class="team"><span class = "points" id="skitTeam2L"></span></div>
           <div class="team"><span class = "points" id="shakeItTeam2L"></span></div> 
           <div class="team"><span class = "points" id="quizTeam2L"></span></div>
+          <div class="team"><span class = "points" id="carbonTeam2L"></span></div>
         </div>
 
         <!-- ---------------------------------------Teams 2 Finsihed here--------------------------------------- -->
@@ -88,6 +91,7 @@
           <div class="team"><span class = "points" id="skitTeam3L"></span></div>
           <div class="team"><span class = "points" id="shakeItTeam3L"></span></div>
           <div class="team"><span class = "points" id="quizTeam3L"></span></div>
+          <div class="team"><span class = "points" id="carbonTeam3L"></span></div>
         </div>
 
         <!-- ---------------------------------------Teams 3 Finsihed here--------------------------------------- -->
@@ -99,6 +103,7 @@
           <div class="team"><span class = "points" id="skitTeam4L"></span></div>
           <div class="team"><span class = "points" id="shakeItTeam4L"></span></div> 
           <div class="team"><span class = "points" id="quizTeam4L"></span></div>
+          <div class="team"><span class = "points" id="carbonTeam4L"></span></div>
         </div>
 
         <!-- ---------------------------------------Teams 4 Finsihed here--------------------------------------- -->
@@ -110,6 +115,7 @@
           <div class="team"><span class = "points" id="skitTeam5L"></span></div>
           <div class="team"><span class = "points" id="shakeItTeam5L"></span></div> 
           <div class="team"><span class = "points" id="quizTeam5L"></span></div> 
+          <div class="team"><span class = "points" id="carbonTeam5L"></span></div>
         </div>
 
         <!-- ---------------------------------------Teams 5 Finsihed here--------------------------------------- -->
@@ -121,6 +127,7 @@
           <div class="team"><span class = "points" id="skitTeam6L"></span></div> 
           <div class="team"><span class = "points" id="shakeItTeam6L"></span></div> 
           <div class="team"><span class = "points" id="quizTeam6L"></span></div> 
+          <div class="team"><span class = "points" id="carbonTeam6L"></span></div>
         </div>
 
         <!-- ---------------------------------------Teams 6 Finsihed here--------------------------------------- -->
@@ -132,6 +139,7 @@
           <div class="team"><span class = "points" id="skitTeam7L"></span></div> 
           <div class="team"><span class = "points" id="shakeItTeam7L"></span></div> 
           <div class="team"><span class = "points" id="quizTeam7L"></span></div> 
+          <div class="team"><span class = "points" id="carbonTeam7L"></span></div>
         </div>
 
         <!-- ---------------------------------------Teams 7 Finsihed here--------------------------------------- -->
@@ -143,6 +151,7 @@
           <div class="team"><span class = "points" id="skitTeam8L"></span></div>
           <div class="team"><span class = "points" id="shakeItTeam8L"></span></div> 
           <div class="team"><span class = "points" id="quizTeam8L"></span></div> 
+          <div class="team"><span class = "points" id="carbonTeam8L"></span></div>
         </div>
         <!-- ---------------------------------------Teams 8 Finsihed here--------------------------------------- -->
         <div class="team9Full">
@@ -153,6 +162,7 @@
           <div class="team"><span class = "points" id="skitTeam9L"></span></div>
           <div class="team"><span class = "points" id="shakeItTeam9L"></span></div> 
           <div class="team"><span class = "points" id="quizTeam9L"></span></div> 
+          <div class="team"><span class = "points" id="carbonTeam9L"></span></div>
         </div>
         <!-- ---------------------------------------Teams 9 Finsihed here--------------------------------------- -->
         <div class="team10Full">
@@ -162,7 +172,8 @@
           <div class="team"><span class = "points" id="teamBuildingT10"></span></div> 
           <div class="team"><span class = "points" id="skitTeam10L"></span></div> 
           <div class="team"><span class = "points" id="shakeItTeam10L"></span></div> 
-          <div class="team"><span class = "points" id="quizTeam10L"></span></div> 
+          <div class="team"><span class = "points" id="quizTeam10L"></span></div>
+          <div class="team"><span class = "points" id="carbonTeam10L"></span></div> 
         </div>
          <!-- ---------------------------------------Teams 10 Finsihed here--------------------------------------- -->
         <div class="team11Full">
@@ -173,6 +184,7 @@
           <div class="team"><span class = "points" id="skitTeam11L"></span></div> 
           <div class="team"><span class = "points" id="shakeItTeam11L"></span></div> 
           <div class="team"><span class = "points" id="quizTeam11L"></span></div> 
+          <div class="team"><span class = "points" id="carbonTeam11L"></span></div>
         </div>
          <!-- ---------------------------------------Teams 11 Finsihed here--------------------------------------- -->
         <div class="team12Full">
@@ -183,6 +195,7 @@
           <div class="team"><span class = "points" id="skitTeam12L"></span></div> 
           <div class="team"><span class = "points" id="shakeItTeam12L"></span></div> 
           <div class="team"><span class = "points" id="quizTeam12L"></span></div> 
+          <div class="team"><span class = "points" id="carbonTeam2L"></span></div>
         </div>
          <!-- ---------------------------------------Teams 12 Finsihed here--------------------------------------- -->
       </div>

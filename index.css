@@ -1,5 +1,7 @@
 body{
-  background: linear-gradient(0deg, rgba(0,246,88,1) 30%, rgba(45,124,253,1) 70%);
+  /* background: linear-gradient(0deg, rgba(0,246,88,1) 30%, rgba(45,124,253,1) 70%); */
+  /* background-image: url("background.png") ; */
+  background-color: black;
 }
 .FullScoreSheet
 {
@@ -20,10 +22,10 @@ body{
   color: orange;
   font-size: 40px;
   height: fit-content;
-  width: 300px;
+  width: 600px;
   text-align: center;
   border: 1px solid black;
-  background-color: black;
+  /* background-color: black; */
   border-radius: 20px 20px 5px 5px;
 }
 
@@ -31,10 +33,10 @@ body{
   margin-top: 40px;
   display: flex;
   border-bottom: 3px solid white;
-  width: 1350px;
-  margin-right: 10%;
-  margin-left: 10%;
-  background-color: black;
+  /* width: 1350px; */
+  /* margin-right: 10%;
+  margin-left: 10%; */
+  /* background-color: black; */
   /* margin-right: 1%; */
 
 }
@@ -51,15 +53,16 @@ body{
 .fullText {
   display: flex;
   /* border: 1px solid red; */
-  width: 1350px;
-  margin-right: 10%;
-  margin-left: 10%;
-  background-color: black;
+  /* width: 1350px; */
+  /* margin-right: 10%;
+  margin-left: 10%; */
+  /* background-color: black; */
   /* border: 1px solid yellow; */
 
 }
-.container {
- width: 100%;
+.container-fluid {
+ /* width: 100%; */
+ background-image: url("background.png");
 }
 .insideTeam
 {
@@ -245,7 +248,7 @@ body{
   height: fit-content;
   width: 100%;
   line-height: 2.75em;
-  background-color: black;
+  /* background-color: black; */
 }
 .team1Full,
 .team2Full,
@@ -264,7 +267,7 @@ body{
   height: fit-content;
   width: 100%;
   line-height: 2.75em;
-  background-color: black;
+  /* background-color: black; */
   border: 0.5px solid grey;
   border-radius: 15px;
   margin-top: 0.5%;
