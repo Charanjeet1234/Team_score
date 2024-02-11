@@ -288,12 +288,12 @@ function submitFormTeamQuizIt5() {
   updateResultPage();
 }
 
-function submitFormTeamcarbonfoot5() {
-  const carbonTeam5 = parseFloat(document.getElementById("carbonTeam5").value);
-  localStorage.setItem("carbonTeam5", carbonTeam5) || 0;
-  // localStorage.setItem("result",result)
-  updateResultPage();
-}
+// function submitFormTeamcarbonfoot5() {
+//   const carbonTeam5 = parseFloat(document.getElementById("carbonTeam5").value);
+//   localStorage.setItem("carbonTeam5", carbonTeam5) || 0;
+//   // localStorage.setItem("result",result)
+//   updateResultPage();
+// }
 
 function submitFormOverallTeam5() {
   const team5teambuildingscore =
@@ -303,7 +303,7 @@ function submitFormOverallTeam5() {
     parseFloat(localStorage.getItem("shakeItTeam5")) || 0;
   const team5quizscore = parseFloat(localStorage.getItem("quizTeam5")) || 0;
   const team5Carbon = parseFloat(localStorage.getItem("carbonTeam5")) || 0;
-  
+
   function submitFormTeamcarbonfoot5() {
     const carbonTeam5 = parseFloat(document.getElementById("carbonTeam5").value);
     localStorage.setItem("carbonTeam5", carbonTeam5) || 0;
