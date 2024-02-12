@@ -47,9 +47,9 @@ body{
   justify-content: center;
   width: 17%;
   height: fit-content;
-  color: orangered;
+  color: orange;
   font-size: 17px;
-  border: 1px solid red;
+  border: 1px solid white;
 }
 
 .fullText {
