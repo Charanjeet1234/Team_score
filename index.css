@@ -34,13 +34,6 @@ body{
 .HeadingFull {
   margin-top: 40px;
   display: flex;
-  /* border-bottom: 3px solid white; */
-  /* width: 1350px; */
-  /* margin-right: 10%;
-  margin-left: 10%; */
-  /* background-color: black; */
-  /* margin-right: 1%; */
-
 }
 .Heading {
   display: flex;
@@ -53,22 +46,9 @@ body{
 }
 
 .fullText {
-  display: flex;
-  /* border: 1px solid red; */
-  /* width: 1350px; */
-  /* margin-right: 10%;
-  margin-left: 10%; */
-  /* background-color: black; */
-  /* border: 1px solid yellow; */
-
+ display: flex; 
 }
 .container-fluid{
- /* width: 100%; */
- /* background-image: url("background.png");
- background-repeat: no-repeat;
- margin: 0%;
- border: 1px solid red; */
-
 }
 .insideTeam
 {
