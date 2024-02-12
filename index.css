@@ -1,6 +1,7 @@
 body{
   /* background: linear-gradient(0deg, rgba(0,246,88,1) 30%, rgba(45,124,253,1) 70%); */
-  /* background-image: url("background.png") ; */
+  background-image: url("background.png");
+  background-repeat: no-repeat;
   background-color: black;
 }
 .FullScoreSheet
@@ -62,10 +63,10 @@ body{
 }
 .container-fluid{
  /* width: 100%; */
- background-image: url("background.png");
+ /* background-image: url("background.png");
  background-repeat: no-repeat;
  margin: 0%;
- border: 1px solid red;
+ border: 1px solid red; */
 
 }
 .insideTeam
