@@ -60,11 +60,12 @@ body{
   /* border: 1px solid yellow; */
 
 }
-.container {
- width: 100%;
+.container-fluid{
+ /* width: 100%; */
  background-image: url("background.png");
  background-repeat: no-repeat;
  margin: 0%;
+ border: 1px solid red;
 
 }
 .insideTeam
