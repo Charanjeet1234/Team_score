@@ -32,7 +32,7 @@ body{
 .HeadingFull {
   margin-top: 40px;
   display: flex;
-  border-bottom: 3px solid white;
+  /* border-bottom: 3px solid white; */
   /* width: 1350px; */
   /* margin-right: 10%;
   margin-left: 10%; */
@@ -47,7 +47,7 @@ body{
   height: fit-content;
   color: orangered;
   font-size: 17px;
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 
 .fullText {
@@ -60,9 +60,12 @@ body{
   /* border: 1px solid yellow; */
 
 }
-.container-fluid {
- /* width: 100%; */
+.container {
+ width: 100%;
  background-image: url("background.png");
+ background-repeat: no-repeat;
+ margin: 0%;
+
 }
 .insideTeam
 {
@@ -273,6 +276,7 @@ body{
   margin-top: 0.5%;
   margin-bottom: 0.5%;
   justify-content:center;
+  margin: 0%;
 }
 .team {
   display: flex;
