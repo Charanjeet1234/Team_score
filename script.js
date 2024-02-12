@@ -74,7 +74,6 @@ function submitFormTeamcarbonfoot1() {
   updateResultPage();
 }
 
-
 function submitFormOverallTeam1() {
   const team1teambuildingscore =
     parseFloat(localStorage.getItem("teamBuildingT1")) || 0;
@@ -130,7 +129,6 @@ function submitFormTeamcarbonfoot2() {
   updateResultPage();
 }
 
-
 function submitFormOverallTeam2() {
   const team2teambuildingscore =
     parseFloat(localStorage.getItem("teamBuildingT2")) || 0;
@@ -185,7 +183,6 @@ function submitFormTeamcarbonfoot3() {
   updateResultPage();
 }
 
-
 function submitFormOverallTeam3() {
   const team3teambuildingscore =
     parseFloat(localStorage.getItem("teamBuildingT3")) || 0;
@@ -193,6 +190,7 @@ function submitFormOverallTeam3() {
   const team3shakeitscore =
     parseFloat(localStorage.getItem("shakeItTeam3")) || 0;
   const team3quizscore = parseFloat(localStorage.getItem("quizTeam3")) || 0;
+
   const team3Carbon = parseFloat(localStorage.getItem("carbonTeam3")) || 0;
   const resultTeam3 =
     team3teambuildingscore +
@@ -239,7 +237,6 @@ function submitFormTeamcarbonfoot4() {
   // localStorage.setItem("result",result)
   updateResultPage();
 }
-
 
 function submitFormOverallTeam4() {
   const team4teambuildingscore =
@@ -288,12 +285,12 @@ function submitFormTeamQuizIt5() {
   updateResultPage();
 }
 
-// function submitFormTeamcarbonfoot5() {
-//   const carbonTeam5 = parseFloat(document.getElementById("carbonTeam5").value);
-//   localStorage.setItem("carbonTeam5", carbonTeam5) || 0;
-//   // localStorage.setItem("result",result)
-//   updateResultPage();
-// }
+function submitFormTeamcarbonfoot5() {
+  const carbonTeam5 = parseFloat(document.getElementById("carbonTeam5").value);
+  localStorage.setItem("carbonTeam5", carbonTeam5) || 0;
+  // localStorage.setItem("result",result)
+  updateResultPage();
+}
 
 function submitFormOverallTeam5() {
   const team5teambuildingscore =
@@ -304,13 +301,6 @@ function submitFormOverallTeam5() {
   const team5quizscore = parseFloat(localStorage.getItem("quizTeam5")) || 0;
   const team5Carbon = parseFloat(localStorage.getItem("carbonTeam5")) || 0;
 
-  function submitFormTeamcarbonfoot5() {
-    const carbonTeam5 = parseFloat(document.getElementById("carbonTeam5").value);
-    localStorage.setItem("carbonTeam5", carbonTeam5) || 0;
-    // localStorage.setItem("result",result)
-    updateResultPage();
-  }
-  
   const resultTeam5 =
     team5teambuildingscore +
     team5skitscore +
@@ -357,7 +347,6 @@ function submitFormTeamcarbonfoot6() {
   updateResultPage();
 }
 
-
 function submitFormOverallTeam6() {
   const team6teambuildingscore =
     parseFloat(localStorage.getItem("teamBuildingT6")) || 0;
@@ -365,12 +354,13 @@ function submitFormOverallTeam6() {
   const team6shakeitscore =
     parseFloat(localStorage.getItem("shakeItTeam6")) || 0;
   const team6quizscore = parseFloat(localStorage.getItem("quizTeam6")) || 0;
-
+  const team6Carbon = parseFloat(localStorage.getItem("carbonTeam6")) || 0;
   const resultTeam6 =
     team6teambuildingscore +
     team6skitscore +
     team6shakeitscore +
-    team6quizscore;
+    team6quizscore +
+    team6Carbon;
   document.getElementById("resultTeam6").value = resultTeam6;
   localStorage.setItem("resultTeam6", resultTeam6);
   compareResultsAndRank();
@@ -418,12 +408,13 @@ function submitFormOverallTeam7() {
   const team7shakeitscore =
     parseFloat(localStorage.getItem("shakeItTeam7")) || 0;
   const team7quizscore = parseFloat(localStorage.getItem("quizTeam7")) || 0;
-
+  const team7Carbon = parseFloat(localStorage.getItem("carbonTeam7")) || 0;
   const resultTeam7 =
     team7teambuildingscore +
     team7skitscore +
     team7shakeitscore +
-    team7quizscore;
+    team7quizscore +
+    team7Carbon;
   document.getElementById("resultTeam7").value = resultTeam7;
   localStorage.setItem("resultTeam7", resultTeam7);
   compareResultsAndRank();
@@ -471,12 +462,13 @@ function submitFormOverallTeam8() {
   const team8shakeitscore =
     parseFloat(localStorage.getItem("shakeItTeam8")) || 0;
   const team8quizscore = parseFloat(localStorage.getItem("quizTeam8")) || 0;
-
+  const team8Carbon = parseFloat(localStorage.getItem("carbonTeam8")) || 0;
   const resultTeam8 =
     team8teambuildingscore +
     team8skitscore +
     team8shakeitscore +
-    team8quizscore;
+    team8quizscore +
+    team8Carbon;
   document.getElementById("resultTeam8").value = resultTeam8;
   localStorage.setItem("resultTeam8", resultTeam8);
   compareResultsAndRank();
@@ -517,7 +509,6 @@ function submitFormTeamcarbonfoot9() {
   updateResultPage();
 }
 
-
 function submitFormOverallTeam9() {
   const team9teambuildingscore =
     parseFloat(localStorage.getItem("teamBuildingT9")) || 0;
@@ -525,12 +516,13 @@ function submitFormOverallTeam9() {
   const team9shakeitscore =
     parseFloat(localStorage.getItem("shakeItTeam9")) || 0;
   const team9quizscore = parseFloat(localStorage.getItem("quizTeam9")) || 0;
-
+  const team9Carbon = parseFloat(localStorage.getItem("carbonTeam9")) || 0;
   const resultTeam9 =
     team9teambuildingscore +
     team9skitscore +
     team9shakeitscore +
-    team9quizscore;
+    team9quizscore +
+    team9Carbon;
   document.getElementById("resultTeam9").value = resultTeam9;
   localStorage.setItem("resultTeam9", resultTeam9);
   compareResultsAndRank();
@@ -564,7 +556,9 @@ function submitFormTeamQuizIt10() {
 }
 
 function submitFormTeamcarbonfoot10() {
-  const carbonTeam10 = parseFloat(document.getElementById("carbonTeam10").value);
+  const carbonTeam10 = parseFloat(
+    document.getElementById("carbonTeam10").value
+  );
   localStorage.setItem("carbonTeam10", carbonTeam10) || 0;
   // localStorage.setItem("result",result)
   updateResultPage();
@@ -577,12 +571,13 @@ function submitFormOverallTeam10() {
   const team10shakeitscore =
     parseFloat(localStorage.getItem("shakeItTeam10")) || 0;
   const team10quizscore = parseFloat(localStorage.getItem("quizTeam10")) || 0;
-
+  const team10Carbon = parseFloat(localStorage.getItem("carbonTeam10")) || 0;
   const resultTeam10 =
     team10teambuildingscore +
     team10skitscore +
     team10shakeitscore +
-    team10quizscore;
+    team10quizscore +
+    team10Carbon;
   document.getElementById("resultTeam10").value = resultTeam10;
   localStorage.setItem("resultTeam10", resultTeam10);
   compareResultsAndRank();
@@ -616,7 +611,9 @@ function submitFormTeamQuizIt11() {
 }
 
 function submitFormTeamcarbonfoot11() {
-  const carbonTeam11 = parseFloat(document.getElementById("carbonTeam11").value);
+  const carbonTeam11 = parseFloat(
+    document.getElementById("carbonTeam11").value
+  );
   localStorage.setItem("carbonTeam11", carbonTeam11) || 0;
   // localStorage.setItem("result",result)
   updateResultPage();
@@ -629,12 +626,13 @@ function submitFormOverallTeam11() {
   const team11shakeitscore =
     parseFloat(localStorage.getItem("shakeItTeam11")) || 0;
   const team11quizscore = parseFloat(localStorage.getItem("quizTeam11")) || 0;
-
+  const team11Carbon = parseFloat(localStorage.getItem("carbonTeam11")) || 0;
   const resultTeam11 =
     team11teambuildingscore +
     team11skitscore +
     team11shakeitscore +
-    team11quizscore;
+    team11quizscore +
+    team11Carbon;
   document.getElementById("resultTeam11").value = resultTeam11;
   localStorage.setItem("resultTeam11", resultTeam11);
   compareResultsAndRank();
@@ -668,7 +666,9 @@ function submitFormTeamQuizIt12() {
 }
 
 function submitFormTeamcarbonfoot12() {
-  const carbonTeam12 = parseFloat(document.getElementById("carbonTeam12").value);
+  const carbonTeam12 = parseFloat(
+    document.getElementById("carbonTeam12").value
+  );
   localStorage.setItem("carbonTeam12", carbonTeam12) || 0;
   // localStorage.setItem("result",result)
   updateResultPage();
@@ -681,12 +681,13 @@ function submitFormOverallTeam12() {
   const team12shakeitscore =
     parseFloat(localStorage.getItem("shakeItTeam12")) || 0;
   const team12quizscore = parseFloat(localStorage.getItem("quizTeam12")) || 0;
-
+  const team12Carbon = parseFloat(localStorage.getItem("carbonTeam12")) || 0;
   const resultTeam12 =
     team12teambuildingscore +
     team12skitscore +
     team12shakeitscore +
-    team12quizscore;
+    team12quizscore +
+    team12Carbon;
   document.getElementById("resultTeam12").value = resultTeam12;
   localStorage.setItem("resultTeam12", resultTeam12);
   compareResultsAndRank();
@@ -697,7 +698,7 @@ function updateResultPage() {
   const xhr = new XMLHttpRequest();
   xhr.onreadystatechange = function () {
     if (xhr.readyState == 4 && xhr.status == 200) {
-      // alert("Point Added successfully!"); // Successfully updated result.html
+      alert("Point Added successfully!"); // Successfully updated result.html
     }
   };
 
