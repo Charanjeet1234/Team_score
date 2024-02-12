@@ -7,7 +7,9 @@ body{
 }
 .FullScoreSheet
 {
-  /* height: 100vh; */
+  height: 100vh;
+  width: 1200px;
+  margin-left: 150px;
 }
 .FullBody {
   width: 100%;
@@ -34,6 +36,8 @@ body{
 .HeadingFull {
   margin-top: 40px;
   display: flex;
+  /* border: 1px solid red; */
+  width: 1200px;
 }
 .Heading {
   display: flex;
@@ -42,13 +46,15 @@ body{
   height: fit-content;
   color: orange;
   font-size: 17px;
-  border: 1px solid white;
+  /* border: 1px solid white; */
 }
 
 .fullText {
  display: flex; 
+ display: 1px solid pink;
 }
 .container-fluid{
+  width: 1200px;
 }
 .insideTeam
 {
@@ -232,7 +238,7 @@ body{
   display: flex;
   /* border: 1px solid red; */
   height: fit-content;
-  width: 100%;
+  width: 1200px;
   line-height: 2.75em;
   /* background-color: black; */
 }
@@ -251,7 +257,7 @@ body{
   display: flex;
   /* border: 1px solid red; */
   height: fit-content;
-  width: 100%;
+  width: 1200px;
   line-height: 2.75em;
   /* background-color: black; */
   border: 0.5px solid grey;
@@ -264,7 +270,7 @@ body{
 .team {
   display: flex;
   justify-content: center;
-  width: 100%;
+  width: 1200px;
   height: fit-content;
   font-size: 20px;
   margin-top: 0.4%;
