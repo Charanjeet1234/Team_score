@@ -8,7 +8,6 @@ body {
   padding: 0; /* Remove default body padding */
   justify-content: center; /* Center content horizontally */
   align-items: center; /* Center content vertically */
-  border: 1px solid red;
 }
 
 .FullScoreSheet
