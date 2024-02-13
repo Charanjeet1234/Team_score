@@ -1,21 +1,28 @@
-body{
-  /* background: linear-gradient(0deg, rgba(0,246,88,1) 30%, rgba(45,124,253,1) 70%); */
+body {
   background-image: url("background.png");
   background-repeat: no-repeat;
   background-color: black;
+  background-position: center;
   height: 100vh;
+  margin: 0; /* Remove default body margin */
+  padding: 0; /* Remove default body padding */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  border: 1px solid red;
 }
+
 .FullScoreSheet
 {
   height: 100vh;
-  width: 1200px;
-  margin-left: 150px;
+  width: 100%;
+  
 }
 .FullBody {
   width: 100%;
   display: flex;
   justify-content: center;
   margin-top: 2%;
+ 
 }
 .scoreboard a {
   color: orange;
@@ -37,7 +44,8 @@ body{
   margin-top: 40px;
   display: flex;
   /* border: 1px solid red; */
-  width: 1200px;
+  width: 100%;
+  justify-content: center;
 }
 .Heading {
   display: flex;
