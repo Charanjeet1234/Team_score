@@ -1,5 +1,5 @@
 body {
-  background-image: url("background.png");
+  background-image: url("background_new.jpg");
   background-repeat: no-repeat;
   background-color: black;
   background-position: center;
@@ -8,12 +8,15 @@ body {
   padding: 0; /* Remove default body padding */
   justify-content: center; /* Center content horizontally */
   align-items: center; /* Center content vertically */
+  
 }
 
 .FullScoreSheet
 {
   height: 100vh;
   width: 100%;
+  /* border: 2px solid orange; */
+  
   
 }
 .FullBody {
@@ -21,6 +24,7 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 2%;
+  
  
 }
 .scoreboard a {
