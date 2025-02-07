@@ -1,44 +1,44 @@
+
 body {
-  background-image: url("background_new.jpg");
+  background-image: url("Background_new1.jpg");
   background-repeat: no-repeat;
   background-color: black;
   background-position: center;
+  width: 100vw;
   height: 100vh;
-  margin: 0; /* Remove default body margin */
-  padding: 0; /* Remove default body padding */
+  margin: 20px; /* Remove default body margin */
+  padding: 30px; /* Remove default body padding */
   justify-content: center; /* Center content horizontally */
-  align-items: center; /* Center content vertically */
-  
+  align-items: center; /* Center content vertically */ 
+  /* border: 0.5px solid orange; */
 }
 
 .FullScoreSheet
 {
-  height: 100vh;
+  height: 80vh;
   width: 100%;
-  /* border: 2px solid orange; */
-  
-  
-}
-.FullBody {
-  width: 100%;
-  display: flex;
-  justify-content: center;
   margin-top: 2%;
   
  
 }
+.FullBody {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  /* margin-top: 2%; */
+}
 .scoreboard a {
   color: orange;
+  align-items: center;
   text-decoration: none;
 }
 
 .scoreboard {
+  
   color: orange;
   font-size: 40px;
   height: fit-content;
-  width: 600px;
   text-align: center;
-  border: 1px solid black;
   /* background-color: black; */
   border-radius: 20px 20px 5px 5px;
 }
@@ -250,6 +250,7 @@ body {
   /* border: 1px solid red; */
   height: fit-content;
   width: 1200px;
+  margin-bottom: 10px;
   line-height: 2.75em;
   /* background-color: black; */
 }
@@ -284,7 +285,15 @@ body {
   width: 1200px;
   height: fit-content;
   font-size: 20px;
-  margin-top: 0.4%;
+  /* margin-top: 0.4%; */
   color: white;
   /* border: 1px solid white; */
+}
+
+.bottom_image
+{
+  display: flex;
+  /* height: 20vh; */
+  padding-right:20px ;
+  justify-content: end;
 }
