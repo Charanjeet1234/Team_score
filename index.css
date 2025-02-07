@@ -17,7 +17,7 @@ body {
 {
   height: 80vh;
   width: 100%;
-  margin-top: 2%;
+  margin-top: 0%;
   
  
 }
@@ -293,7 +293,7 @@ body {
 .bottom_image
 {
   display: flex;
-  height: 30vh;
+  height: 20vh;
   padding-right:40px ;
   margin-bottom: 30px;
   justify-content: end;
