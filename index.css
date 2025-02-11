@@ -4,29 +4,27 @@ body {
   background-repeat: no-repeat;
   background-color: black;
   background-position: center;
-  width: 100vw;
-  height: 100vh;
-  margin: 20px; /* Remove default body margin */
-  padding: 30px; /* Remove default body padding */
   justify-content: center; /* Center content horizontally */
   align-items: center; /* Center content vertically */ 
-  /* border: 0.5px solid orange; */
-}
-
-.FullScoreSheet
-{
-  height: 80vh;
-  width: 100%;
-  margin-top: 0%;
   
- 
 }
 .FullBody {
   display: block;
   align-items: center;
+  margin-top: 1%;
+  width: 100vw;
+  height: 100vh;
   justify-content: center;
-  /* margin-top: 2%; */
 }
+
+.FullScoreSheet
+{
+  height: 70vh;
+  width: 100vw;
+  margin-top: 0%;
+}
+
+
 .scoreboard a {
   color: orange;
   align-items: center;
@@ -34,19 +32,16 @@ body {
 }
 
 .scoreboard {
-  
   color: orange;
   font-size: 60px;
   height: fit-content;
   text-align: center;
-  /* background-color: black; */
-  border-radius: 20px 20px 5px 5px;
+  /* border-radius: 20px 20px 5px 5px; */
 }
 
 .HeadingFull {
-  margin-top: 40px;
+  margin-top: 30px;
   display: flex;
-  /* border: 1px solid red; */
   width: 100%;
   justify-content: center;
 }
@@ -56,16 +51,16 @@ body {
   width: 17%;
   height: fit-content;
   color: orange;
-  font-size: 17px;
+  font-size: 20px;
   /* border: 1px solid white; */
 }
 
 .fullText {
  display: flex; 
- display: 1px solid pink;
 }
 .container-fluid{
-  width: 1200px;
+  width: fit-content;
+ 
 }
 .insideTeam
 {
@@ -267,10 +262,10 @@ body {
 .team11Full,
 .team12Full {
   display: flex;
-  /* border: 1px solid red; */
   height: fit-content;
   width: 1200px;
   line-height: 2.75em;
+  /* font-size: 23px; */
   /* background-color: black; */
   border: 0.5px solid grey;
   border-radius: 15px;
@@ -284,10 +279,8 @@ body {
   justify-content: center;
   width: 1200px;
   height: fit-content;
-  font-size: 20px;
-  /* margin-top: 0.4%; */
+  font-size: 23px;
   color: white;
-  /* border: 1px solid white; */
 }
 
 .bottom_image
