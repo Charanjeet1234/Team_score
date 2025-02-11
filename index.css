@@ -3,7 +3,7 @@ body {
   background-image: url("Background_new1.jpg");
   background-repeat: no-repeat;
   background-color: black;
-  background-position: center;
+  background-position: 50% 30%;
   justify-content: center; /* Center content horizontally */
   align-items: center; /* Center content vertically */ 
   
